@@ -203,7 +203,8 @@ ul.features-list {
     .container{
         text-align: center;
         border: 5em var(--primary-color);
-        border-style: double solid;
+        border-style: solid;
+        border-radius: 1em;
         margin-top: 5em;
         padding: 1em;
     }
@@ -354,10 +355,12 @@ nav{
     .contacts-section{
         .container{
             text-align: center;
-            border: 5em var(--primary-color);
-            border-style: double solid;
+            color: white;
+            border: 1em var(--secondary-color);
+            border-style:  solid;
             margin-top: -5em;
-            padding: 1em;
+            background-color: var(--tertiary-color);
+            padding: 1em;            
         }
     
     }
