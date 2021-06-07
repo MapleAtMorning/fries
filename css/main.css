@@ -159,7 +159,7 @@ ul.features-list li:before {
   content: '';
   left: -1.6em;
   margin-top: 0.5em;
-  background: #181818;
+  background: whitesmoke;
   border-radius: 0.2em;
   position: absolute;
   width: 60px;
@@ -202,8 +202,12 @@ ul.features-list li:before {
   color: white;
 }
 
-.contacts-section {
-  display: none;
+.contacts-section .container {
+  text-align: center;
+  border: 5em var(--primary-color);
+  border-style: double solid;
+  margin-top: 5em;
+  padding: 1em;
 }
 
 h2 {
@@ -359,13 +363,20 @@ nav li a:hover {
   }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1300px) {
   .container {
-    width: 1080px;
+    width: 1300px;
     margin: 0 auto;
   }
   section {
     padding: 10em 4em;
+  }
+  .contacts-section .container {
+    text-align: center;
+    border: 5em var(--primary-color);
+    border-style: double solid;
+    margin-top: -5em;
+    padding: 1em;
   }
   .hero .container {
     display: -webkit-box;
@@ -382,6 +393,37 @@ nav li a:hover {
   .hero .container .leftcol h1 {
     font-size: 4em;
     width: 90%;
+  }
+  .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1em;
+  }
+  ul.features-list {
+    display: block;
+    margin-left: -5em;
+  }
+  ul.features-list li {
+    font-size: 4.5em;
+  }
+  ul.features-list li:before {
+    width: 1.3em;
+    height: 1.3em;
+    margin: 0;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2em;
+    width: 40em;
+    margin: 0;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -152,7 +152,7 @@ ul.features-list {
             content: '';
             left: -1.6em;
             margin-top: 0.5em;
-            background: rgb(24, 24, 24);
+            background: whitesmoke;
             border-radius: 0.2em;
             position: absolute;
             width: 60px;
@@ -200,7 +200,14 @@ ul.features-list {
 
 
 .contacts-section{
-    display: none;
+    .container{
+        text-align: center;
+        border: 5em var(--primary-color);
+        border-style: double solid;
+        margin-top: 5em;
+        padding: 1em;
+    }
+
 }
 
 h2 {
@@ -336,13 +343,25 @@ nav{
     }
 }
 
-@media only screen and (min-width :1080px) {
+@media only screen and (min-width :1300px) {
     .container {
-        width: 1080px;
+        width: 1300px;
         margin: 0 auto;
     }
 
     section {padding: 10em 4em;}
+    
+    .contacts-section{
+        .container{
+            text-align: center;
+            border: 5em var(--primary-color);
+            border-style: double solid;
+            margin-top: -5em;
+            padding: 1em;
+        }
+    
+    }
+
 
     .hero .container {
         display: flex;
@@ -357,5 +376,30 @@ nav{
                 width: 90%;
             }
         }
+    }
+
+    .hero-cta {display: flex;} 
+    .primary-cta {margin-right: 1em;}
+    ul.features-list{
+        display: block;
+        margin-left: -5em;
+
+        li{
+            font-size: 4.5em;
+
+            &:before {
+                width: 1.3em;
+                height: 1.3em;
+                margin: 0;
+            }
+        }
+    }
+
+    .testimonials-section ul{
+        display: flex;
+        font-size: 2em;
+        width: 40em;
+        margin: 0;
+        li{ margin: 0 1em;}
     }
 }
