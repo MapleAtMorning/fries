@@ -129,7 +129,7 @@ section {
 section.features-section {
     background: var(--tertiary-color);
     color: white;
-
+    border-top: 1.5em inset var(--tertiary-color);
 }
 
 ul.features-list {
@@ -205,6 +205,7 @@ ul.features-list {
 
 
 .contacts-section{
+    border-top: 1em inset var(--tertiary-color);
     .container{
         text-align: center;
         color: white;

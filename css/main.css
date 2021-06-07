@@ -134,6 +134,7 @@ section {
 section.features-section {
   background: var(--tertiary-color);
   color: white;
+  border-top: 1.5em inset var(--tertiary-color);
 }
 
 ul.features-list {
@@ -206,6 +207,10 @@ ul.features-list li:before {
 .testimonials-section ul li .anonymous {
   text-decoration: none;
   color: white;
+}
+
+.contacts-section {
+  border-top: 1em inset var(--tertiary-color);
 }
 
 .contacts-section .container {

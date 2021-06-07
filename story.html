@@ -12,9 +12,7 @@
 
         <div class="container">
             <a class = logo href="index.html">Fries.<span>Pics</span></a>
-
             <img id="mobile-cta" class="mobile-menu" src="images\menu.svg" alt="Open Menu">
-
             <nav>
                 <img id="mobile-exit" class="mobile-menu-exit" src="images\exit.svg" alt="Close Menu">
 
@@ -34,9 +32,10 @@
 
     <section class="hero">
         <div class="container">
-            <div class="leftcol">
+            <div class="title">
                 <p class="subhead">100% Real Gaming</p>
                 <h1>Fries, The Story</h1>
+                <h3 class= "scroll">Scroll Down :)</h3>
             </div>
 
             <img src="images\fries.svg" class="fries-img" alt="Fries illustration">
@@ -44,8 +43,41 @@
     </section>
 
     <section class="story">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium interdum iaculis. Sed non pretium elit. Fusce imperdiet diam vitae eros lacinia ullamcorper. Nulla facilisi. Cras ornare aliquam diam, quis porttitor leo porttitor vel. Sed tincidunt nisl et sodales aliquam. Suspendisse a elit turpis. Maecenas laoreet nunc nec laoreet tristique. Phasellus nec congue felis, a condimentum velit. Aliquam non neque arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id condimentum dui. Maecenas nec turpis posuere, consequat mi eget, posuere augue. Nullam sed urna sed eros mollis accumsan. Quisque eleifend hendrerit mauris, eget convallis lorem porttitor sit amet. Suspendisse varius tempus sodales.</p>
+        <div class="container">
+            <ul class="goal">
+                <li><h2>Our Goal:</h2></li>
+                <li><p>We here at <a href="https://rb.gy/wo6ha7">Fries.Pics</a> have spent long amounts of time putting work into delivering you the one image channel we can. Revising, procrastinating, suffering, losing our families in the process, we're proud to give you, Fries. </p></li>
+                <li><p>Our one image channel is guaranteed to have 10x the ensured quality of other competitor one image channels.</p></li>
+            </ul>
+            <ul class="ourstory">
+                <li><h2>Our Story:</h2></li>
+                <li><p>This all started oddly in the Biden server. Biden created a contest for whoever makes the best emotes keeps the event server (not main biden server).
+                    Dr. Fries being the amazing awesome hot guy that he his made a bunch of good emotes for biden. He created a pact with another emote maker named Maya.
+                    With the combined power of Dr. Fries and Maya they made the coolest, bestest emotes and won the contest.</p></li>
+                <li><p>They debated for weeks figuring out what they wanted the server to become. They had one goal in common, make the best one image server. Maya suggested to make a competitor for the Burger server. Fries has been founded.</p></li>
+                <li><p>Fries had a boost, starting with around 150 members. This made it possible to start partnerships immediately. We wanted to take over Burger in members. 
+                    Mr. Burger joined fries, this was an intense moment. Dr. Fries and Mr. Burger started talking business, as you do.
+                    They decided to not declare war, but declare peace. They created a partnership that still holds strong to this day. </p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+            </ul>
+        </div>
+    
     </section>
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
 
 
 </body>
