@@ -100,6 +100,11 @@ section {
         font-weight: bold;
         display: inline-block;
         transition: all 0.25s;
+        &:hover {
+            font-weight:bold;
+            text-decoration: underline;
+            text-shadow: 0.1em 0.1em black;  
+          }
           }
     }
 
@@ -202,11 +207,13 @@ ul.features-list {
 .contacts-section{
     .container{
         text-align: center;
-        border: 5em var(--primary-color);
-        border-style: solid;
-        border-radius: 1em;
-        margin-top: 5em;
-        padding: 1em;
+        color: white;
+        border: 1em var(--secondary-color);
+        border-style:  solid;
+        border-radius: 0.5em;
+        margin-top: 0;
+        background-color: var(--tertiary-color);
+        padding: 1em;            
     }
 
 }

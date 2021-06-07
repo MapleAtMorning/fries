@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: rgb(255, 72, 0);
+    --grey: rgb(99, 99, 99);
+    --secondary-color: #be1931;
+    --tertiary-color: #dd2e44;
+}
+
+.navbar {
+    background: white;
+    padding: 0.5em;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.5em;
+        font-family: 'Staatliches' ;
+        span {
+            color: var(--primary-color);
+        }
+        transition: all 1s;
+        &:hover {
+          font-size: 1.8em;  
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+    
+    .mobile-menu {
+        cursor: pointer;
+    }
+}

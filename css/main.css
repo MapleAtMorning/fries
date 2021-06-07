@@ -105,6 +105,12 @@ section {
   transition: all 0.25s;
 }
 
+.leftcol .primary-cta:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0.1em 0.1em black;
+}
+
 .secondary-cta {
   display: block;
   margin-top: 1em;
@@ -204,10 +210,12 @@ ul.features-list li:before {
 
 .contacts-section .container {
   text-align: center;
-  border: 5em var(--primary-color);
+  color: white;
+  border: 1em var(--secondary-color);
   border-style: solid;
-  border-radius: 1em;
-  margin-top: 5em;
+  border-radius: 0.5em;
+  margin-top: 0;
+  background-color: var(--tertiary-color);
   padding: 1em;
 }
 
