@@ -49,6 +49,52 @@ body {
     }
 }
 
+nav.menu-btn {
+    display:block;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: auto;
+    right: 0;
+    top: 0;
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
+    height: 100vh;
+    padding: 1em;
+
+    ul.navPrimary {
+        margin-top: 5em;
+    }
+
+    li {
+
+        a{ 
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5em;
+            font-size: 3em;
+            text-align: right;
+            transition: all 0.15s;
+            &:hover {
+                font-weight:bold;
+                text-decoration: underline;
+                text-shadow: 0.1em 0.1em black;  
+              }
+        }
+    }
+}
+
+.mobile-menu-exit {
+    margin: 0.5em;
+    cursor:pointer;
+    &:hover {
+        width: 2em;
+        height: 2em;
+      }
+}
+
 a {
     color: var(--grey);
 }
@@ -108,7 +154,7 @@ section {
           }
     }
 
-    .secondary-cta {
+.secondary-cta {
         display: block;
         margin-top: 1em;
         text-decoration: none;
@@ -141,10 +187,11 @@ ul.features-list {
     li {
         font-size: 3em;
         width: unset;
-        text-align: left;
-        margin: 0em 0em 2.5em 3em;
+        max-width: 50%;
+        text-align: center;
+        margin: 0em 0em 2.5em 15%;
         padding-left: 0.4em;
-        padding-right: 1em;
+        padding-right: 0.6em;
         position: relative;
         display: list-item;
         background: var(--secondary-color);
@@ -153,7 +200,7 @@ ul.features-list {
         text-decoration: none;
         border-radius: 0.4em;
 
-        &:before{
+        &:before{ //fries that go along with the quote
             content: '';
             left: -1.6em;
             margin-top: 0.5em;
@@ -264,50 +311,6 @@ iframe{
     height: 300px;
 }
 
-nav.menu-btn {
-    display:block;
-}
-nav{
-    position: fixed;
-    z-index: 999;
-    width: auto;
-    right: 0;
-    top: 0;
-    background: linear-gradient(var(--secondary-color), var(--primary-color));
-    height: 100vh;
-    padding: 1em;
-
-    ul.navPrimary {
-        margin-top: 5em;
-    }
-
-    li {
-
-        a{ 
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: 0.5em;
-            font-size: 3em;
-            text-align: right;
-            transition: all 0.15s;
-            &:hover {
-                font-weight:bold;
-                text-decoration: underline;
-                text-shadow: 0.1em 0.1em black;  
-              }
-        }
-    }
-}
-
-.mobile-menu-exit {
-    margin: 0.5em;
-    cursor:pointer;
-    &:hover {
-        width: 2em;
-        height: 2em;
-      }
-}
 
 @media only screen and (min-width :768px) {
     .mobile-menu, .mobile-menu-exit {display: none;}
@@ -333,6 +336,15 @@ nav{
                 text-shadow: 0.1em 0.1em var(--tertiary-color);  
               }
         }
+
+        ul.features-list{
+            margin-top: 5em;
+            padding-left: 1em;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 5fr));
+
+            li {margin-left:25%;}
+        } 
 
         ul.navPrimary {margin: 0;}
         li.current a {font-weight: bold;}
@@ -373,6 +385,9 @@ nav{
     
     }
 
+    ul.features-list{
+        li {margin-left:25%;}
+    } 
 
     .hero .container {
         display: flex;

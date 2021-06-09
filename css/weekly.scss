@@ -11,7 +11,6 @@
 body {
     background: #F2F2F2;
     margin: 0;
-    padding: 0;
     font-family: 'Rubik' ;
 }
 
@@ -51,6 +50,7 @@ body {
 nav.menu-btn {
     display:block;
 }
+
 nav{
     position: fixed;
     z-index: 999;
@@ -93,6 +93,17 @@ nav{
       }
 }
 
+a {
+    color: var(--grey);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
 .title {
     .subhead {
         text-transform: lowercase;
@@ -107,14 +118,6 @@ nav{
         letter-spacing: 1.1em;            
         }
     }
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
 }
 
 h1{
@@ -132,9 +135,9 @@ section {
     text-align: center;
 }
 
-.hero .gallery{
-    margin-top: 13em;
-    .fries-img {
+.hero{
+    margin-top: 5em;
+    .weekly-img {
         display: inline-block;
         max-width: 100%;
         width: auto;
@@ -145,6 +148,7 @@ iframe{
     width: 100%;
     height: 300px;
 }
+
 
 @media only screen and (min-width :768px) {
     .mobile-menu, .mobile-menu-exit {display: none;}
@@ -200,11 +204,11 @@ iframe{
         display: flex;
         justify-content: space-between;
         text-align: left;
-        .fries-img {
-            margin: -5em 0em 10em 0em;
+        .weekly-img {
+            margin: -1em 0em 10em 0em;
         }
         .title {
-            margin: 10em 3em 0em 5em;
+            margin: 0em 3em 0em 5em;
 
             h1 {
                 font-size: 4em;
