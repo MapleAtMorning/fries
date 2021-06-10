@@ -185,8 +185,8 @@ section.features-section {
 }
 
 ul.features-list {
-  margin-top: 5em;
-  padding-left: 1em;
+  margin: 5em auto;
+  padding-left: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25rem, 5fr))[auto-fit];
@@ -194,13 +194,11 @@ ul.features-list {
 }
 
 ul.features-list li {
-  font-size: 3em;
+  font-size: 2em;
   width: unset;
   max-width: 50%;
   text-align: center;
-  margin: 0em 0em 2.5em 15%;
-  padding-left: 0.4em;
-  padding-right: 0.6em;
+  margin: 0em 0em 2.5em 25%;
   position: relative;
   display: list-item;
   background: var(--secondary-color);
@@ -212,13 +210,13 @@ ul.features-list li {
 
 ul.features-list li:before {
   content: '';
-  left: -1.6em;
+  left: 0;
   margin-top: 0.5em;
   background: whitesmoke;
   border-radius: 0.2em;
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 0px;
+  height: 0px;
   background-image: url("../images/fries.svg");
   background-size: contain;
   margin-right: 0.5em;
@@ -319,6 +317,15 @@ iframe {
   height: 300px;
 }
 
+@media only screen and (max-width: 390px) {
+  ul.features-list {
+    margin: 0;
+  }
+  ul.features-list li {
+    margin-left: 5%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
     display: none;
@@ -358,17 +365,6 @@ iframe {
     text-decoration: underline;
     text-shadow: 0.1em 0.1em var(--tertiary-color);
   }
-  .navbar nav ul.features-list {
-    margin-top: 5em;
-    padding-left: 1em;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(25rem, 5fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 5fr));
-  }
-  .navbar nav ul.features-list li {
-    margin-left: 25%;
-  }
   .navbar nav ul.navPrimary {
     margin: 0;
   }
@@ -386,6 +382,31 @@ iframe {
     text-decoration: underline;
     background: rgba(255, 114, 59, 0.342);
     text-shadow: 0em 0em;
+  }
+  ul.features-list {
+    margin-top: 5em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 5fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 5fr));
+  }
+  ul.features-list li {
+    font-size: 3em;
+    margin: 0em 0em 2.5em 25%;
+    padding: 0.3em;
+  }
+  ul.features-list li:before {
+    content: '';
+    left: -1.6em;
+    margin-top: 0.5em;
+    background: whitesmoke;
+    border-radius: 0.2em;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/fries.svg");
+    background-size: contain;
+    margin-right: 0.5em;
   }
 }
 
@@ -405,9 +426,6 @@ iframe {
     margin-top: -5em;
     background-color: var(--tertiary-color);
     padding: 1em;
-  }
-  ul.features-list li {
-    margin-left: 25%;
   }
   .hero .container {
     display: -webkit-box;
@@ -435,7 +453,7 @@ iframe {
   }
   ul.features-list {
     display: block;
-    margin-left: -5em;
+    margin-left: 0;
   }
   ul.features-list li {
     font-size: 4.5em;
