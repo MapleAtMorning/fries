@@ -140,6 +140,7 @@ section {
             padding: 0;
             margin: 0;
             width: auto;
+            border-radius: 1em;
         }
     }
 }
@@ -196,8 +197,10 @@ iframe{
             display: inline-block;
             max-height: 200px;
             max-width: 35%;
+            border-radius: 1em;
             min-width: 125px;
-            padding-right: 5em;
+            margin-right: 3em;
+            margin-bottom: 4em;
             width: auto;
         }
     }
@@ -214,12 +217,18 @@ iframe{
         display: flex;
         justify-content: space-between;
         text-align: left;
+        .gallery{
+            max-width: 600px;
+            margin-left: 40%;
+        }
         .fries-img {
-            margin: -5em 0em 10em 0em;
+            margin: -5em 5em 8em 0em;
+            max-height: 300px;
+            width:auto;
         }
         .title {
-            margin: 10em 3em 0em 5em;
-
+            margin: 6em 3em 0em 5em;
+            position: fixed;
             h1 {
                 font-size: 4em;
                 width: 90%;

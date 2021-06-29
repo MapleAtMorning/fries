@@ -451,6 +451,9 @@ iframe {
   .primary-cta {
     margin-right: 1em;
   }
+  .secondary-cta {
+    display: block;
+  }
   ul.features-list {
     display: block;
     margin-left: 0;

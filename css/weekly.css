@@ -143,9 +143,10 @@ section {
   margin-top: 5em;
 }
 
-.hero .weekly-img {
+.hero .monthly-img {
   display: inline-block;
   max-width: 100%;
+  border-radius: 1em;
   width: auto;
 }
 
@@ -211,6 +212,9 @@ iframe {
     background: rgba(255, 114, 59, 0.342);
     text-shadow: 0em 0em;
   }
+  .hero .container .monthly-img {
+    border-radius: 3.5em;
+  }
   .story {
     font-size: 2em;
   }
@@ -233,8 +237,9 @@ iframe {
             justify-content: space-between;
     text-align: left;
   }
-  .hero .container .weekly-img {
+  .hero .container .monthly-img {
     margin: -1em 0em 10em 0em;
+    border-radius: 5em;
   }
   .hero .container .title {
     margin: 0em 3em 0em 5em;
