@@ -110,6 +110,10 @@ h1 {
   color: white;
 }
 
+.story .container .soda-image {
+  display: none;
+}
+
 iframe {
   width: 100%;
   height: 300px;
@@ -250,6 +254,18 @@ nav li a:hover {
   .hero .container .title h1 {
     font-size: 4em;
     width: 90%;
+  }
+  .story .container .soda-image {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    float: right;
+    margin: 15% -10% 0 0;
+    width: auto;
+    height: 25em;
+  }
+  .story .container .soda {
+    max-width: 65%;
   }
 }
 /*# sourceMappingURL=story.css.map */

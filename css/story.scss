@@ -105,7 +105,11 @@ h1{
     background: var(--secondary-color);
     border-top: 0.6em inset var(--tertiary-color);
     color: white;
+    .container .soda-image {
+        display: none;
+    }
 }
+
 
 iframe{
     width: 100%;
@@ -221,6 +225,18 @@ nav{
                 font-size: 4em;
                 width: 90%;
             }
+        }
+    }
+    .story .container {
+        .soda-image {
+            display: inline-flex;
+            float: right;
+            margin: 15% -10% 0 0;
+            width: auto;
+            height: 25em;
+        }
+        .soda{
+            max-width: 65%;
         }
     }
 }
