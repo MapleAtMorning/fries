@@ -230,7 +230,14 @@ iframe {
   section {
     padding: 2em 4em;
   }
+  .container {
+    width: 1300px;
+    margin: 0 auto;
+  }
   .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
