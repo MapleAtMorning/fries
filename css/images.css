@@ -217,14 +217,9 @@ iframe {
     margin-top: 6em;
   }
   .hero .gallery .fries-img {
-    display: inline-block;
     max-height: 200px;
     max-width: 35%;
-    border-radius: 1em;
-    min-width: 125px;
-    margin-right: 3em;
-    margin-bottom: 4em;
-    width: auto;
+    margin: 1em 1em 1em 1em;
   }
   .story {
     font-size: 2em;
@@ -232,33 +227,31 @@ iframe {
 }
 
 @media only screen and (min-width: 1300px) {
-  .container {
-    width: 1300px;
-    margin: 0 auto;
-  }
   section {
-    padding: 10em 4em;
+    padding: 2em 4em;
   }
   .hero .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: left;
   }
   .hero .container .gallery {
-    max-width: 600px;
-    margin-left: 40%;
+    width: 60%;
+    margin-left: 37%;
+    text-align: center;
+    float: left;
   }
   .hero .container .fries-img {
-    margin: -5em 5em 8em 0em;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     max-height: 300px;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
   .hero .container .title {
-    margin: 6em 3em 0em 5em;
+    margin: 15% 3em 0em 5em;
     position: fixed;
   }
   .hero .container .title h1 {
