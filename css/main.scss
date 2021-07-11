@@ -62,6 +62,7 @@ nav{
     background: linear-gradient(var(--secondary-color), var(--primary-color));
     height: 100vh;
     padding: 1em;
+    font-size: 1em;
 
     ul.navPrimary {
         margin-top: 5em;
@@ -74,7 +75,7 @@ nav{
             text-decoration: none;
             display: block;
             padding: 0.5em;
-            font-size: 3em;
+            font-size: 1.5em;
             text-align: right;
             transition: all 0.15s;
             &:hover {
@@ -114,7 +115,7 @@ section {
     text-align: center;
 }
 
-.leftcol {
+.title {
     .subhead {
         text-transform: lowercase;
         font-weight: bold;
@@ -160,7 +161,7 @@ section {
         text-decoration: none;
         &:hover {
             span {display:none}
-            &:after{content:"Seriously Don't";}
+            &:after{content:"Seriously don't";}
         }
     
     
@@ -168,8 +169,9 @@ section {
 
 .fries-img {
     max-width: 55%;
+    min-width: 100px;
     width: 55%;
-    margin: 5em 0em 10em 0em;
+    margin: 0em 0em 10em 0em;
 }
 
 section.features-section {
@@ -237,7 +239,6 @@ ul.features-list {
                 border: 15px solid var(--secondary-color);
                 border-radius: 50%;
                 margin-top: -4.5em;
-                
             }
             .anonymous {
                 text-decoration: none;
@@ -410,13 +411,16 @@ iframe{
         display: flex;
         justify-content: space-between;
         text-align: left;
-
-        .leftcol {
-            margin: 3em 3em 0em 5em;
-
+        .fries-img {
+            margin: -5em 0em 10em 0em;
+            height: auto;
+            width: auto;
+        }
+        .title {
+            margin: 3em 0em 0em 5em;
             h1 {
                 font-size: 4em;
-                width: 90%;
+                width: 100%;
             }
         }
     }
