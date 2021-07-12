@@ -10,6 +10,6 @@ If it's truly awful, don't look at it that's your fault for criticising a comple
 - HarryG/Biden - Jumpstarting the server and being Biden
 - Soda - Soda
 - Mr. Burger - Burgering
-- AyoKhan - Helping fix a few issues.
+- AyoKhan - Helping fix a few issues and general website help
 - lovely - Helping advertise, chill dude
 - [Sk3leCreeper - Don't click me :)](https://www.youtube.com/watch?v=gkTb9GP9lVI)
