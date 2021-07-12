@@ -1,7 +1,7 @@
 # Notes
 Yes, I know my code sucks.   
 This is literally the first time ever that I truly learnt HTML and CSS, and it was for a joke.   
-If it's truly awful, don't look at it that's your fault.   
+If it's truly awful, don't look at it that's your fault for criticising a complete noob.   
 
 # [Credits](http://sus.fries.pics)
 - **FlameBand - Creator**
