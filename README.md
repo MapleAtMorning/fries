@@ -1,3 +1,8 @@
+# Notes
+Yes, I know my code sucks.
+This is literally the first time ever that I truly learnt HTML and CSS, and it was for a joke.
+If it's truly awful, don't look at it that's your fault.
+
 # [Credits](http://sus.fries.pics)
 - **FlameBand - Creator**
 - Maya - Emotional Support Catgirl
@@ -5,6 +10,6 @@
 - HarryG/Biden - Jumpstarting the server and being Biden
 - Soda - Soda
 - Mr. Burger - Burgering
+- AyoKhan - Helping fix a few issues.
 - lovely - Helping advertise, chill dude
 - [Sk3leCreeper - Don't click me :)](https://www.youtube.com/watch?v=gkTb9GP9lVI)
-- AyoKhan - Existing
