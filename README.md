@@ -6,6 +6,7 @@ If it's truly awful, don't look at it that's your fault for criticising a comple
 # [Credits](http://sus.fries.pics)
 - **FlameBand - Creator**
 - Maya - Emotional Support Catgirl
+- Zeexel - Actual god
 - DrGonzoPhD - They call him, Mr. Fries.
 - HarryG/Biden - Jumpstarting the server and being Biden
 - Soda - Soda
