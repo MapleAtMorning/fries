@@ -31,7 +31,7 @@
                 </ul>
 
                 <ul class="navSomething">
-                    <li class="invite"><a href="https://rb.gy/wo6ha7">Invite</a></li>
+                    <li class="invite"><a href="https://rb.gy/wo6ha7">Join</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +41,6 @@
             <div class="title">
                 <p class="subhead">100% Real Gaming</p>
                 <h1>Fries, The Story</h1>
-                <h3 class= "scroll">Scroll Down :)</h3>
             </div>
 
             <img src="images\fries.svg" class="fries-img" alt="Fries illustration">
@@ -50,51 +49,86 @@
 
     <section class="story">
         <div class="container">
-            <ul class="goal">
-                <li><h2>Our Goal:</h2></li>
-                <li><p>We here at <a href="https://rb.gy/wo6ha7">Fries.Pics</a> have spent long amounts of time putting work into delivering you the best one image channel we can. Revising, procrastinating, suffering, losing our families in the process, we're proud to give you, Fries. </p></li>
-                <li><p>Our one image channel is guaranteed to have 10x the ensured quality of other competitor one image channels.</p></li>
-            </ul>
-            <ul class="ourstory">
-                <li><h2>Our Story:</h2></li>
-                <li><p>This all started oddly in the Biden server. Biden created a contest for whoever makes the best emotes keeps the event server (not main biden server).
+            <button type="button" class="collapsible">
+                <img src="images\arrow.svg" class="arrowimg" id="arrowimg1"><span> Our Goal:</span>
+            </button>
+            <div class="content">
+                <p>We here at <a href="https://rb.gy/wo6ha7">Fries.Pics</a> have spent long amounts of time putting work into delivering you the best one image channel we can.
+                     Revising, procrastinating, suffering, losing our families in the process, we're proud to give you, Fries. </p>
+                <p>Our one image channel is guaranteed to have 10x the ensured quality of other competitor one image channels.</p>
+            </div>
+
+            <button type="button" class="collapsible">
+                <img src="images\arrow.svg" class="arrowimg" id="arrowimg2"><span> Our Story:</span>
+            </button>
+            <div class="content">
+                <p>This all started oddly in the Biden server. Biden created a contest for whoever makes the best emotes keeps the event server (not main biden server).
                     Dr. Fries being the amazing awesome hot guy that he his made a bunch of good emotes for biden. He created a pact with another emote maker named Maya.
-                    With the combined power of Dr. Fries and Maya they made the coolest, bestest emotes and won the contest.</p></li>
-                <li><p>They debated for weeks figuring out what they wanted the server to become. They had one goal in common, make the best one image server. Maya suggested to make a competitor for the Burger server. Fries has been founded.</p></li>
-                <li><p>Fries had a boost, starting with around 150 members. This made it possible to start partnerships immediately. We wanted to take over Burger in members. 
+                    With the combined power of Dr. Fries and Maya they made the coolest, bestest emotes and won the contest.</p>
+                <p>They debated for weeks figuring out what they wanted the server to become. They had one goal in common, make the best one image server. Maya suggested to make a competitor for the Burger server. Fries has been founded.</p>
+                <p>Fries had a boost, starting with around 150 members. This made it possible to start partnerships immediately. We wanted to take over Burger in members. 
                     Mr. Burger joined fries, this was an intense moment. Dr. Fries and Mr. Burger started talking business, as you do.
-                    They decided to not declare war, but declare peace. They created a partnership that still holds strong to this day. </p></li>
-            </ul>
-            <img class="soda-image" src="images\soda.png" alt="Sprite Soda">
-            <ul class="soda">
-                <li><h2>The Adopted Child:</h2></li>
-                <li><p>This is a little story, all about our adopted child. It all started as a joke. "We need to have soda to complete the fast food trio" they said. 
-                    They all decided to make a new server, but didn't know what it would be or who would run it.</p></li>
-                <li><p>One hero rised from the ideas. It's name, was Soda. It was the perfect final piece that we've been looking for. One brave 5 year old rose up for the occasion and 
-                    decided to take soda under their wing. Once the owner was picked there were deep conversations about what soda it should be. </p></li>
-                <li><p>Ideas bounced from coke to fanta. Arguments got heated, opinions flew. But at the end, it was chosen. The final chosen brand was sprite, 
-                    loved by all. And after all, the fabled McDonalds sprite was famous.</p></li>
-                <li><p>The server started off well, but slowly degraded. It wasn't pure anymore. The server would host events often, and have messages daily in the sacred
+                    They decided to not declare war, but declare peace. They created a partnership that still holds strong to this day. </p>
+            </div>
+
+            <button type="button" class="collapsible" >
+                <img src="images\arrow.svg" class="arrowimg" id="arrowimg3"><span> The Adopted Child:</span>
+            </button>
+            <div class="content">
+                <img class="soda-image" src="images\soda.png" alt="Sprite Soda">
+                <p>This is a little story, all about our adopted child. It all started as a joke. "We need to have soda to complete the fast food trio" they said. 
+                    They all decided to make a new server, but didn't know what it would be or who would run it.</p>
+                <p>One hero rised from the ideas. It's name, was Soda. It was the perfect final piece that we've been looking for. One brave 5 year old rose up for the occasion and 
+                    decided to take soda under their wing. Once the owner was picked there were deep conversations about what soda it should be. </p>
+                <p>Ideas bounced from coke to fanta. Arguments got heated, opinions flew. But at the end, it was chosen. The final chosen brand was sprite, 
+                    loved by all. And after all, the fabled McDonalds sprite was famous.</p>
+                <p>The server started off well, but slowly degraded. It wasn't pure anymore. The server would host events often, and have messages daily in the sacred
                     soda channel. It was rarer to see the server with just the sprite image than it was to see it with a event or something going on. Fries tried to distance itself
-                    from it's creation. Soda wasn't a real one image server anymore, and everyone knew it.</p></li>
-                <li><p>To be continued</p></li>
-            </ul>
+                    from it's creation. Soda wasn't a real one image server anymore, and everyone knew it.</p>
+                <p>To be continued...</p>
+            </div>
         </div>
     
     </section>
+
     <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var imgrot1 = document.getElementById("arrowimg1");
+        var imgrot2 = document.getElementById("arrowimg2");
+        var imgrot3 = document.getElementById("arrowimg3");
+        var i;
 
-        const mobileBtn = document.getElementById('mobile-cta')
-            nav = document.querySelector('nav')
-            mobileBtnExit = document.getElementById('mobile-exit');
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+              if (coll[0]){
+                  imgrot1.className = "arrowimg"
+              } else if(coll[1]) {
+                  imgrot2.className = "arrowimg"
+              } else if (coll[2]) {
+                  imgrot3.className = "arrowimg";
+              }
+            } else {
+              content.style.display = "block";
+              if (coll[0]){
+                  imgrot1.className = "arrowimgdown"
+              } else if(coll[1]) {
+                  imgrot2.className = "arrowimgdown"
+              } else if (coll[2]) {
+                  imgrot3.className = "arrowimgdown";
+              }
+            }
+          });
+        }
 
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
+        // HAHA THIS IS FUCKING STUPID :)
+        
+
     </script>
+    <script src="javascript\mobilebtn.js"></script>
 
 
 </body>

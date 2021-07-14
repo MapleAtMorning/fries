@@ -4,7 +4,7 @@
 
     <title>Fries</title>
     <meta content="Fries" property="og:title" />
-    <meta content="it's fries, the discord server" property="og:description" />
+    <meta content="it's fries, the website" property="og:description" />
     <meta content="http://beta.fries.pics/" property="og:url" />
     <meta content="http://beta.fries.pics/images/fries/fries1.png" property="og:image" />
     <meta content="#dd2e44" data-react-helmet="true" name="theme-color" />
@@ -35,7 +35,7 @@
                 </ul>
 
                 <ul class="navSomething">
-                    <li class="invite"><a href="https://rb.gy/wo6ha7">Invite</a></li>
+                    <li class="invite"><a href="https://rb.gy/wo6ha7">Join</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +66,6 @@
                 <li>Invite Your Friends</li>
                 <li>Immense Pleasure</li>
             </ul>
-            <img src="images\holding-phone.jpg" alt="Man holds phone">  
         </div>
     </section>
 
@@ -102,19 +101,7 @@
             </div>
         </div>
     </section> 
-    <script>
-
-        const mobileBtn = document.getElementById('mobile-cta')
-            nav = document.querySelector('nav')
-            mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-    </script>
+    <script src="javascript\mobilebtn.js"></script>
 
 </body>
 </html>

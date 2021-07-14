@@ -65,10 +65,14 @@ nav {
   background: linear-gradient(var(--secondary-color), var(--primary-color));
   height: 100vh;
   padding: 1em;
+  font-size: 1em;
 }
 
 nav ul.navPrimary {
   margin-top: 5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav li a {
@@ -76,7 +80,7 @@ nav li a {
   text-decoration: none;
   display: block;
   padding: 0.5em;
-  font-size: 3em;
+  font-size: 1.5em;
   text-align: right;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
