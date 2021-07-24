@@ -131,6 +131,12 @@ h1{
     margin: 0.2em 0em 0.5em;
     padding: 0;
 }
+h2{
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin: 0.2em 0em;
+    padding: 0;
+}
 
 .fries-img {
     max-width: 55%;
@@ -148,6 +154,12 @@ h1{
     color: #F2F2F2;
     height: auto;
     .container{
+        .fuck-you{
+            display: none;
+            opacity: 0%;
+            margin: 0;
+            padding: 0;
+        }
         .soda-image {
             display: none;} 
     }
@@ -168,14 +180,6 @@ iframe{
     font-weight: bold;
     cursor: pointer;
     padding-top: 1em;
-}
-.arrowimg{
-    filter: invert(99%) sepia(22%) saturate(28%) hue-rotate(307deg) brightness(114%) contrast(90%);
-    transform: rotate(0deg);
-}
-.arrowimgdown{
-    filter: invert(99%) sepia(22%) saturate(28%) hue-rotate(307deg) brightness(114%) contrast(90%);
-    transform: rotate(90deg);
 }
 
 .content {
@@ -228,6 +232,12 @@ iframe{
         }
     }
     .story {font-size: 2em;} 
+    .collapsible{
+        transition: all 1s;
+        &:hover{
+            letter-spacing: 0.1em;
+        }
+    }
 }
 
 @media only screen and (min-width :1300px) {
@@ -256,6 +266,13 @@ iframe{
     }
     .story .container {
         padding-bottom: 10em;
+        .fuck-you{
+            display: flex;
+            transition: all 1s;
+            &:hover{
+                opacity: 100%;
+            }
+        }
         .soda-image {
             display: inline-flex;
             float: right;

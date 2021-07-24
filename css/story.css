@@ -143,6 +143,13 @@ h1 {
   padding: 0;
 }
 
+h2 {
+  font-size: 2.5em;
+  line-height: 1.1em;
+  margin: 0.2em 0em;
+  padding: 0;
+}
+
 .fries-img {
   max-width: 55%;
   min-width: 100px;
@@ -158,6 +165,13 @@ h1 {
   border-top: 0.6em inset var(--tertiary-color);
   color: #F2F2F2;
   height: auto;
+}
+
+.story .container .fuck-you {
+  display: none;
+  opacity: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 .story .container .soda-image {
@@ -179,20 +193,6 @@ iframe {
   font-weight: bold;
   cursor: pointer;
   padding-top: 1em;
-}
-
-.arrowimg {
-  -webkit-filter: invert(99%) sepia(22%) saturate(28%) hue-rotate(307deg) brightness(114%) contrast(90%);
-          filter: invert(99%) sepia(22%) saturate(28%) hue-rotate(307deg) brightness(114%) contrast(90%);
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.arrowimgdown {
-  -webkit-filter: invert(99%) sepia(22%) saturate(28%) hue-rotate(307deg) brightness(114%) contrast(90%);
-          filter: invert(99%) sepia(22%) saturate(28%) hue-rotate(307deg) brightness(114%) contrast(90%);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 .content {
@@ -261,6 +261,13 @@ iframe {
   .story {
     font-size: 2em;
   }
+  .collapsible {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .collapsible:hover {
+    letter-spacing: 0.1em;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -294,6 +301,16 @@ iframe {
   }
   .story .container {
     padding-bottom: 10em;
+  }
+  .story .container .fuck-you {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .story .container .fuck-you:hover {
+    opacity: 100%;
   }
   .story .container .soda-image {
     display: -webkit-inline-box;

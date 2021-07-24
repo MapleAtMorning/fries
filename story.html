@@ -49,8 +49,10 @@
 
     <section class="story">
         <div class="container">
+            <h2>Click a chapter to open it</h2>
+            <h4 class="fuck-you">Yes I know this looks bad fuck you</h4>
             <button type="button" class="collapsible">
-                <img src="images\arrow.svg" class="arrowimg" id="arrowimg1"><span> Our Goal:</span>
+                <span> Our Goal:</span>
             </button>
             <div class="content">
                 <p>We here at <a href="https://rb.gy/wo6ha7">Fries.Pics</a> have spent long amounts of time putting work into delivering you the best one image channel we can.
@@ -59,7 +61,7 @@
             </div>
 
             <button type="button" class="collapsible">
-                <img src="images\arrow.svg" class="arrowimg" id="arrowimg2"><span> Our Story:</span>
+                <span> Our Story:</span>
             </button>
             <div class="content">
                 <p>This all started oddly in the Biden server. Biden created a contest for whoever makes the best emotes keeps the event server (not main biden server).
@@ -72,7 +74,7 @@
             </div>
 
             <button type="button" class="collapsible" >
-                <img src="images\arrow.svg" class="arrowimg" id="arrowimg3"><span> The Adopted Child:</span>
+                <span> The Adopted Child:</span>
             </button>
             <div class="content">
                 <img class="soda-image" src="images\soda.png" alt="Sprite Soda">
@@ -93,9 +95,6 @@
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
-        var imgrot1 = document.getElementById("arrowimg1");
-        var imgrot2 = document.getElementById("arrowimg2");
-        var imgrot3 = document.getElementById("arrowimg3");
         var i;
 
         for (i = 0; i < coll.length; i++) {
@@ -104,27 +103,11 @@
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
               content.style.display = "none";
-              if (coll[0]){
-                  imgrot1.className = "arrowimg"
-              } else if(coll[1]) {
-                  imgrot2.className = "arrowimg"
-              } else if (coll[2]) {
-                  imgrot3.className = "arrowimg";
-              }
             } else {
               content.style.display = "block";
-              if (coll[0]){
-                  imgrot1.className = "arrowimgdown"
-              } else if(coll[1]) {
-                  imgrot2.className = "arrowimgdown"
-              } else if (coll[2]) {
-                  imgrot3.className = "arrowimgdown";
-              }
             }
           });
         }
-
-        // HAHA THIS IS FUCKING STUPID :)
         
 
     </script>
