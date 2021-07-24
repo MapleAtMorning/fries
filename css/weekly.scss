@@ -60,9 +60,11 @@ nav{
     background: linear-gradient(var(--secondary-color), var(--primary-color));
     height: 100vh;
     padding: 1em;
+    font-size: 1em;
 
     ul.navPrimary {
         margin-top: 5em;
+        align-items: center;
     }
 
     li {
@@ -72,7 +74,7 @@ nav{
             text-decoration: none;
             display: block;
             padding: 0.5em;
-            font-size: 3em;
+            font-size: 1.5em;
             text-align: right;
             transition: all 0.15s;
             &:hover {
@@ -207,7 +209,7 @@ iframe{
         justify-content: space-between;
         text-align: left;
         .monthly-img {
-            margin: -1em 0em 0em 0em;
+            margin: -8em 0em 0em 0em;
             border-radius: 5em;
         }
         .title {
