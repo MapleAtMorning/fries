@@ -70,6 +70,9 @@ nav {
 
 nav ul.navPrimary {
   margin-top: 5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav li a {
@@ -163,6 +166,9 @@ section {
   display: block;
   margin-top: 1em;
   text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .secondary-cta:hover span {
@@ -200,7 +206,7 @@ ul.features-list li {
   width: unset;
   max-width: 50%;
   text-align: center;
-  margin: 0em 0em 2.5em 25%;
+  margin: 0em 0em 1em 25%;
   position: relative;
   display: list-item;
   background: var(--secondary-color);
@@ -222,10 +228,6 @@ ul.features-list li:before {
   background-image: url("../images/fries.svg");
   background-size: contain;
   margin-right: 0.5em;
-}
-
-.features-section img {
-  display: none;
 }
 
 .testimonials-section {
@@ -280,38 +282,6 @@ label {
   display: block;
   font-size: 1.2em;
   margin-bottom: 0.6em;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 0.8em;
-  margin-bottom: 1em;
-  border-radius: 0.3em;
-  border: 1px solid grey;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background: var(--primary-color);
-  color: white;
-  font-weight: bold;
-  font-size: 1.5em;
-  border: none;
-  margin-bottom: 7em;
-  border-radius: 5em;
-  display: inline-block;
-  padding: 1em 2em;
-  width: unset;
-  cursor: pointer;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-input[type="submit"]:hover {
-  font-weight: bold;
-  text-decoration: underline;
-  text-shadow: 0.1em 0.1em black;
 }
 
 iframe {
@@ -387,6 +357,7 @@ iframe {
   }
   ul.features-list {
     margin-top: 5em;
+    margin-bottom: 0em;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(25rem, 5fr))[auto-fit];
@@ -461,12 +432,17 @@ iframe {
   .secondary-cta {
     display: block;
   }
+  .features-section {
+    margin: 0;
+    padding: 1em;
+  }
   ul.features-list {
     display: block;
     margin-left: 0;
   }
   ul.features-list li {
-    font-size: 4.5em;
+    font-size: 3.5em;
+    margin-bottom: 1em;
   }
   ul.features-list li:before {
     width: 1.3em;

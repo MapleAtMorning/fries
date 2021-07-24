@@ -46,18 +46,60 @@ body {
         cursor: pointer;
     }
 }
+nav.menu-btn {
+    display:block;
+}
+nav{
+    position: fixed;
+    z-index: 999;
+    width: auto;
+    right: 0;
+    top: 0;
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
+    height: 100vh;
+    padding: 1em;
+    font-size: 1em;
 
+    ul.navPrimary {
+        margin-top: 5em;
+        align-items: center;
+    }
+
+    li {
+
+        a{ 
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5em;
+            font-size: 1.5em;
+            text-align: right;
+            transition: all 0.15s;
+            &:hover {
+                font-weight:bold;
+                text-decoration: underline;
+                text-shadow: 0.1em 0.1em black;  
+              }
+        }
+    }
+}
+.mobile-menu-exit {
+    margin: 0.5em;
+    cursor:pointer;
+    &:hover {
+        width: 2em;
+        height: 2em;
+      }
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     
 }
-
 a {
-    color:white;
+    color:#F2F2F2;
 }
-
 
 section {
     padding: 2em 3em 2em 3em;   
@@ -68,9 +110,6 @@ section {
 }
 
 .title {
-    h3{
-        display: none;
-    }
     .subhead {
         text-transform: lowercase;
         font-weight: bold;
@@ -92,6 +131,12 @@ h1{
     margin: 0.2em 0em 0.5em;
     padding: 0;
 }
+h2{
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin: 0.2em 0em;
+    padding: 0;
+}
 
 .fries-img {
     max-width: 55%;
@@ -103,63 +148,47 @@ h1{
 .story {
     font-size: 1.4em;
     background: var(--secondary-color);
+    margin: 0;
+    padding: 2em 2em 35% 2em;
     border-top: 0.6em inset var(--tertiary-color);
-    color: white;
-    .container .soda-image {
-        display: none;
+    color: #F2F2F2;
+    height: auto;
+    .container{
+        .fuck-you{
+            display: none;
+            opacity: 0%;
+            margin: 0;
+            padding: 0;
+        }
+        .soda-image {
+            display: none;} 
     }
 }
-
 
 iframe{
     width: 100%;
     height: 300px;
 }
 
-nav.menu-btn {
-    display:block;
-}
-nav{
-    position: fixed;
-    z-index: 999;
-    width: auto;
-    right: 0;
-    top: 0;
-    background: linear-gradient(var(--secondary-color), var(--primary-color));
-    height: 100vh;
-    padding: 1em;
-
-    ul.navPrimary {
-        margin-top: 5em;
-    }
-
-    li {
-
-        a{ 
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: 0.5em;
-            font-size: 3em;
-            text-align: right;
-            transition: all 0.15s;
-            &:hover {
-                font-weight:bold;
-                text-decoration: underline;
-                text-shadow: 0.1em 0.1em black;  
-              }
-        }
-    }
+.collapsible {
+    display: block;
+    font-size: 1.5em;
+    color: #F2F2F2;
+    background: none;
+    border: none;
+    font-family: 'Rubik' ;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 1em;
 }
 
-.mobile-menu-exit {
-    margin: 0.5em;
-    cursor:pointer;
-    &:hover {
-        width: 2em;
-        height: 2em;
-      }
-}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+
+
 
 @media only screen and (min-width :768px) {
     .mobile-menu, .mobile-menu-exit {display: none;}
@@ -203,6 +232,12 @@ nav{
         }
     }
     .story {font-size: 2em;} 
+    .collapsible{
+        transition: all 1s;
+        &:hover{
+            letter-spacing: 0.1em;
+        }
+    }
 }
 
 @media only screen and (min-width :1300px) {
@@ -210,7 +245,7 @@ nav{
         width: 1300px;
         margin: 0 auto;
     }
-    section {padding: 10em 4em;}
+    section.hero {padding: 10em 4em;}
     .hero .container {
         display: flex;
         justify-content: space-between;
@@ -230,6 +265,14 @@ nav{
         }
     }
     .story .container {
+        padding-bottom: 10em;
+        .fuck-you{
+            display: flex;
+            transition: all 1s;
+            &:hover{
+                opacity: 100%;
+            }
+        }
         .soda-image {
             display: inline-flex;
             float: right;
