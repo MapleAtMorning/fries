@@ -11,6 +11,7 @@ body {
   background: #F2F2F2;
   margin: 0;
   font-family: 'Rubik';
+  cursor: default;
 }
 
 .navbar {
@@ -34,6 +35,7 @@ body {
 
 .navbar .logo:hover {
   font-size: 1.8em;
+  cursor: pointer;
 }
 
 .navbar nav {
@@ -103,7 +105,9 @@ nav li a:hover {
 }
 
 a {
-  color: var(--grey);
+  color: var(--black);
+  text-decoration: none;
+  cursor: default;
 }
 
 ul {
@@ -191,6 +195,7 @@ iframe {
     color: black;
     font-size: 1em;
     padding: 0.1em 1em;
+    cursor: pointer;
   }
   .navbar nav a:hover {
     font-weight: bold;

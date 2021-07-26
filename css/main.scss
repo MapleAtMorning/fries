@@ -14,8 +14,8 @@ body {
     background: #F2F2F2;
     margin: 0;
     font-family: 'Rubik' ;
+    cursor: default;
 }
-
 .navbar {
     background: white;
     padding: 0.5em;
@@ -32,6 +32,7 @@ body {
         transition: all 1s;
         &:hover {
           font-size: 1.8em;  
+          cursor: pointer;
         }
     }
 
@@ -48,11 +49,9 @@ body {
         cursor: pointer;
     }
 }
-
 nav.menu-btn {
     display:block;
 }
-
 nav{
     position: fixed;
     z-index: 999;
@@ -87,7 +86,6 @@ nav{
         }
     }
 }
-
 .mobile-menu-exit {
     margin: 0.5em;
     cursor:pointer;
@@ -100,7 +98,6 @@ nav{
 a {
     color: var(--grey);
 }
-
 ul {
     list-style-type: none;
     margin: 0;

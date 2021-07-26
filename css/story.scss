@@ -12,8 +12,8 @@ body {
     background: #F2F2F2;
     margin: 0;
     font-family: 'Rubik' ;
+    cursor: default;
 }
-
 .navbar {
     background: white;
     padding: 0.5em;
@@ -30,6 +30,7 @@ body {
         transition: all 1s;
         &:hover {
           font-size: 1.8em;  
+          cursor: pointer;
         }
     }
 
@@ -91,6 +92,7 @@ nav{
         height: 2em;
       }
 }
+
 ul {
     list-style-type: none;
     margin: 0;

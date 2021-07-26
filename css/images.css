@@ -10,8 +10,8 @@
 body {
   background: #F2F2F2;
   margin: 0;
-  padding: 0;
   font-family: 'Rubik';
+  cursor: default;
 }
 
 .navbar {
@@ -35,6 +35,7 @@ body {
 
 .navbar .logo:hover {
   font-size: 1.8em;
+  cursor: pointer;
 }
 
 .navbar nav {
@@ -221,6 +222,9 @@ iframe {
     margin-top: 6em;
   }
   .hero .gallery .fries-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     max-height: 200px;
     max-width: 35%;
     margin: 1em 1em 1em 1em;
