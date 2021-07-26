@@ -180,6 +180,10 @@ h2 {
   display: none;
 }
 
+.story .container .harris-image {
+  display: none;
+}
+
 iframe {
   width: 100%;
   height: 300px;
@@ -313,6 +317,21 @@ iframe {
   }
   .story .container .fuck-you:hover {
     opacity: 100%;
+  }
+  .story .container .harris-image {
+    float: left;
+    display: inline;
+    margin: 12% 10% 10% 0;
+    background-color: var(--tertiary-color);
+    background-image: url("../images/harris.png");
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+    -webkit-transition: ease-in-out 300ms;
+    transition: ease-in-out 300ms;
+  }
+  .story .container .harris-image:hover {
+    background-image: url("../images/harrisevil.png");
   }
   .story .container .soda-image {
     display: -webkit-inline-box;

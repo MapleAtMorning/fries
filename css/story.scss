@@ -163,6 +163,8 @@ h2{
             padding: 0;
         }
         .soda-image {
+            display: none;}
+        .harris-image {
             display: none;} 
     }
 }
@@ -275,6 +277,21 @@ iframe{
                 opacity: 100%;
             }
         }
+        .harris-image {
+            float: left;
+            display: inline;
+            margin: 12% 10% 10% 0;
+            background-color: var(--tertiary-color);
+            background-image: url("../images/harris.png");
+            width: 15em;
+            height: 15em;
+            border-radius: 1em;
+            transition: ease-in-out 300ms;
+            &:hover{
+                background-image: url("../images/harrisevil.png");
+            }
+        }
+
         .soda-image {
             display: inline-flex;
             float: right;
