@@ -6,6 +6,7 @@
     --grey: rgb(99, 99, 99);
     --secondary-color: #be1931;
     --tertiary-color: #dd2e44;
+    --shadow-color: #b92237;
 }
 
 body {
@@ -92,20 +93,6 @@ nav{
         height: 2em;
       }
 }
-
-a {
-    color: var(--black);
-    text-decoration: none;
-    cursor: default;
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .title {
     .subhead {
         text-transform: lowercase;
@@ -121,7 +108,19 @@ ul {
         }
     }
 }
+iframe{
+    width: 100%;
+    height: 300px;
+}
 
+.hero{text-align: center;}
+section {padding: 2em 3em 2em 3em;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 h1{
     font-size: 3.5em;
     line-height: 1.1em;
@@ -129,24 +128,48 @@ h1{
     padding: 0;
 }
 
-section {
-    padding: 2em 3em 2em 3em;   
-}
-
-.hero{
-    margin-top: 5em;
+.charholder {
     text-align: center;
-    .monthly-img {
-        display: inline-block;
-        max-width: 100%;
-        border-radius: 1em;
-        width: auto;
+    max-width: 75%;
+    min-width: 200px;
+    width: 75%;
+    margin: auto;
+    padding: 1em;
+    font-size: 65%;
+    border-radius: 3em;
+    color: #F2F2F2;
+    text-shadow: 0.2em 0.2em var(--shadow-color);
+    border: 0.6em solid var(--secondary-color);
+    background: var(--tertiary-color);
+    .charlist{
+        padding: 0em;
+        font-size: 4em;
+        margin: 0;
+        .collapsible {
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-top: -1em;
+            font-size: 0.65em;
+            color: #F2F2F2;
+            text-shadow: 0.1em 0.1em var(--shadow-color);
+            background: none;
+            border: none;
+            font-family: 'Rubik' ;
+            cursor: pointer;
+        }
+        .content {
+            padding: 0;
+            padding-top: 0em;
+            background: var(--shadow-color);
+            margin-top: -1em;
+            border-radius: 1em;
+            display: none;
+            overflow: hidden;
+            font-size: 0.5em;
+            text-shadow: none;
+        }
     }
-}
-
-iframe{
-    width: 100%;
-    height: 300px;
 }
 
 
@@ -167,7 +190,6 @@ iframe{
             color: black;
             font-size: 1em;
             padding: 0.1em 1em;
-            cursor: pointer;
             &:hover {
                 font-weight:bold;
                 color:rgb(44, 44, 44);
@@ -192,31 +214,50 @@ iframe{
               }
         }
     }
-    .hero .container .monthly-img{border-radius: 3.5em;}
-    .story {font-size: 2em;}
+
+    .charholder {
+        max-width: 75%;
+        width: 75%;
+        font-size: 1.25em;
+        .charlist{
+            padding: 0em;
+            font-size: 2.5em;
+            margin: 0;
+            .collapsible {
+                margin-top: -1.3em;
+                margin-bottom: -1em;
+                font-size: 1em;
+                transition: all 1s;
+                &:hover{
+                    letter-spacing: 0.1em;
+                }
+            }
+            .content {
+                margin-top: -0.5em;
+                margin-bottom: 1.5em;
+                font-size: 0.5em;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width :1300px) {
+    section {padding: 10em 4em;}
     .container {
         width: 1300px;
         margin: 0 auto;
     }
-    section {padding: 10em 4em;}
     .hero .container {
         display: flex;
         justify-content: space-between;
         text-align: left;
-        .monthly-img {
-            margin: -8em 0em 0em 0em;
-            border-radius: 5em;
-        }
         .title {
-            margin: 0em 3em 0em 5em;
-
+            margin: 3em 0em 0em 5em;
             h1 {
                 font-size: 4em;
-                width: 90%;
+                width: 100%;
             }
         }
     }
+
 }

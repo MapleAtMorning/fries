@@ -113,9 +113,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
 }
-
 h1{
     font-size: 3.5em;
     line-height: 1.1em;
@@ -200,11 +198,10 @@ iframe{
             margin: 1em 1em 1em 1em;
         }
     }
-    .story {font-size: 2em;}
 }
 
 @media only screen and (min-width :1300px) {
-    section {padding: 2em 4em;}
+    section {padding: 1.1em 4em;}
     .container {
         width: 1300px;
         margin: 0 auto;
@@ -228,7 +225,7 @@ iframe{
         }
 
         .title {
-            margin: 15% 3em 0em 5em;
+            margin: 10% 3em 0em 5em;
             position: fixed;
             h1 {
                 font-size: 4em;

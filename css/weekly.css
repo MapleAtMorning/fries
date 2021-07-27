@@ -144,11 +144,8 @@ section {
 }
 
 .hero {
-  text-align: center;
-}
-
-.hero {
   margin-top: 5em;
+  text-align: center;
 }
 
 .hero .monthly-img {
