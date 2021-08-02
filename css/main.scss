@@ -153,10 +153,13 @@ section {
     }
 
     .secondary-cta {
-        display: block;
-        margin-top: 1em;
+        display: flex;
+        margin-top: 0em;
         text-decoration: none;
         align-items: center;
+        .cta2img{
+            padding-right: 0.4em;
+        }
         &:hover {
             span {display:none}
             &:after{content:"Seriously don't";}
@@ -181,7 +184,7 @@ section.features-section {
 ul.features-list {
     margin: 5em auto;
     padding-left: 0;
-    display: grid;
+    display: list-item;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 5fr));
 
     li {
@@ -276,8 +279,8 @@ iframe{
 
 @media only screen and (max-width :390px){
     ul.features-list {
-        margin:0;
-        li {margin-left: 5%;}
+        margin: auto;
+        li {font-size: 1.2em;}
     }
 
 }
@@ -368,7 +371,7 @@ iframe{
             border-style:  solid;
             margin-top: -5em;
             background-color: var(--tertiary-color);
-            padding: 1em;            
+            padding: 1em;       
         }
     
     }

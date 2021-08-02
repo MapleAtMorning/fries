@@ -50,8 +50,8 @@
 
                 <div class="hero-cta">
                     <a href="https://rb.gy/wo6ha7" class="primary-cta">Join for fries!</a>
-                    <a href="https://www.youtube.com/watch?v=aYsgsSo1aow" class="secondary-cta">
-                        <img src="images\watch.svg" alt="Don't click me"> <span>Don't click me</span>
+                    <a id="trolled" href="#" class="secondary-cta">
+                        <img src="images\watch.svg" alt="Camera image" class="cta2img"> <span>Don't click me</span>
                     </a>    
                 </div>
             </div>
@@ -98,13 +98,28 @@
             </div>
             <div class="contact-right">
                 <h3>This is literally just some random white castle</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sus!4v1623057963918!5m2!1sen!2sus!6m8!1m7!1sH5RV_8CPLijfnLrkxYB8EA!2m2!1d39.8560524436738!2d-86.39296802910516!3f305.65996857782767!4f2.7048118440184368!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sus!4v1623057963918!5m2!1sen!2sus!6m8!1m7!1sH5RV_8CPLijfnLrkxYB8EA!2m2!1d39.8560524436738!2d-86.39296802910516!3f305.65996857782767!4f2.7048118440184368!5f0.7820865974627469" width="600" height="450" style="border-radius:0.5em; border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section> 
-    <script src="javascript\mobilebtn.js"></script>
-
 </body>
 </html>
 
-<!-- removed herobrine -->
+<script>
+var youtubeLinks = [
+    "https://www.youtube.com/watch?v=aYsgsSo1aow",
+    "https://www.youtube.com/watch?v=EPNr4aztjX8",
+    "https://www.youtube.com/watch?v=SNvDUO42Hys",
+    "https://www.youtube.com/watch?v=czTksCF6X8Y",
+    "https://www.youtube.com/watch?v=8ZrQ8vh1hk8",
+    "https://www.youtube.com/watch?v=gRMNwrNk5WE",
+    "https://www.youtube.com/watch?v=gkTb9GP9lVI",
+    "https://www.youtube.com/watch?v=D-GU4jvSvz4",
+    "https://www.youtube.com/watch?v=geNMz0J9TEQ",
+    "https://www.youtube.com/watch?v=zNZ1rq5kW4M"
+];
+
+var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
+document.getElementById('trolled').href = randomItem
+</script>
+<script src="javascript\mobilebtn.js"></script>

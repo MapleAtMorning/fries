@@ -165,12 +165,18 @@ section {
 }
 
 .title .secondary-cta {
-  display: block;
-  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0em;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.title .secondary-cta .cta2img {
+  padding-right: 0.4em;
 }
 
 .title .secondary-cta:hover span {
@@ -197,8 +203,7 @@ section.features-section {
 ul.features-list {
   margin: 5em auto;
   padding-left: 0;
-  display: -ms-grid;
-  display: grid;
+  display: list-item;
   -ms-grid-columns: (minmax(25rem, 5fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 5fr));
 }
@@ -293,10 +298,10 @@ iframe {
 
 @media only screen and (max-width: 390px) {
   ul.features-list {
-    margin: 0;
+    margin: auto;
   }
   ul.features-list li {
-    margin-left: 5%;
+    font-size: 1.2em;
   }
 }
 
