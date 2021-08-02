@@ -164,7 +164,7 @@ section {
   text-shadow: 0.1em 0.1em black;
 }
 
-.secondary-cta {
+.title .secondary-cta {
   display: block;
   margin-top: 1em;
   text-decoration: none;
@@ -173,11 +173,11 @@ section {
           align-items: center;
 }
 
-.secondary-cta:hover span {
+.title .secondary-cta:hover span {
   display: none;
 }
 
-.secondary-cta:hover:after {
+.title .secondary-cta:hover:after {
   content: "Seriously don't";
 }
 
