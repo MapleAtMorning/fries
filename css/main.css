@@ -165,10 +165,8 @@ section {
 }
 
 .title .secondary-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0em;
+  display: block;
+  margin-top: 1em;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -428,6 +426,12 @@ iframe {
     font-size: 4em;
     width: 100%;
   }
+  .hero .container .title .secondary-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
   .hero-cta {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,9 +439,6 @@ iframe {
   }
   .primary-cta {
     margin-right: 1em;
-  }
-  .secondary-cta {
-    display: block;
   }
   .features-section {
     margin: 0;

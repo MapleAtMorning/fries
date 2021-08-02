@@ -153,8 +153,8 @@ section {
     }
 
     .secondary-cta {
-        display: flex;
-        margin-top: 0em;
+        display: block;
+        margin-top: 1em;
         text-decoration: none;
         align-items: center;
         .cta2img{
@@ -391,12 +391,15 @@ iframe{
                 font-size: 4em;
                 width: 100%;
             }
+            .secondary-cta {
+                display: flex;
+                margin-top: 0;
+            }
         }
     }
 
     .hero-cta {display: flex;} 
     .primary-cta {margin-right: 1em;}
-    .secondary-cta {display: block;}
 
 
     .features-section{
