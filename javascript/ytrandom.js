@@ -9,7 +9,8 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=D-GU4jvSvz4",
     "https://www.youtube.com/watch?v=geNMz0J9TEQ",
     "https://www.youtube.com/watch?v=zNZ1rq5kW4M",
-    "https://www.youtube.com/watch?v=iijdWiQppq0"
+    "https://www.youtube.com/watch?v=iijdWiQppq0",
+    "https://www.youtube.com/watch?v=WqsQ2zIsTYk"
 ];
 
 var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
