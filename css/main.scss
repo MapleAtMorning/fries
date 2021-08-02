@@ -352,6 +352,13 @@ iframe{
                 margin-right: 0.5em;
             }
         }
+    }
+    .testimonials-section ul{
+        display: flex;
+        font-size: 1.3em;
+        width: auto;
+        margin: 0;
+        li{ margin: 0 1em;}
     } 
 }
 

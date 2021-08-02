@@ -386,6 +386,17 @@ iframe {
     background-size: contain;
     margin-right: 0.5em;
   }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.3em;
+    width: auto;
+    margin: 0;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
