@@ -21,7 +21,8 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=861-pxjkokk", //Completely normal revolver
     "https://www.youtube.com/watch?v=n4Sb8jCJUTw", //Portrait Artist Takes LSD
     "https://www.youtube.com/watch?v=PFkju1-0lZI", //GMOD KINECT
-    "https://www.youtube.com/watch?v=HV1O9TaK_qg" //Gorilla tag Trailer
+    "https://www.youtube.com/watch?v=HV1O9TaK_qg", //Gorilla tag Trailer
+    "https://www.youtube.com/watch?v=j2MnNBE9j-w" //Is that a flying fish?
 ];
 
 var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
