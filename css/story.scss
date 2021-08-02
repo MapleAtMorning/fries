@@ -6,6 +6,7 @@
     --grey: rgb(99, 99, 99);
     --secondary-color: #be1931;
     --tertiary-color: #dd2e44;
+    --shadow-color: #a51d2f;
 }
 
 body {
@@ -155,7 +156,9 @@ h2{
     border-top: 0.6em inset var(--tertiary-color);
     color: #F2F2F2;
     height: auto;
+    text-shadow: 0.2em 0.2em var(--shadow-color);
     .container{
+        text-shadow: none;
         .fuck-you{
             display: none;
             opacity: 0%;
@@ -178,6 +181,7 @@ iframe{
     display: block;
     font-size: 1.5em;
     color: #F2F2F2;
+    text-shadow: 0.1em 0.1em var(--shadow-color);
     background: none;
     border: none;
     font-family: 'Rubik' ;
@@ -190,7 +194,7 @@ iframe{
     padding: 0 18px;
     display: none;
     overflow: hidden;
-  }
+}
 
 
 

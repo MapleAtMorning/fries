@@ -5,7 +5,7 @@
   --grey: rgb(99, 99, 99);
   --secondary-color: #be1931;
   --tertiary-color: #dd2e44;
-  --shadow-color: #a51d2f;
+  --shadow-color: #b92237;
 }
 
 body {
@@ -105,24 +105,6 @@ nav li a:hover {
   height: 2em;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: #F2F2F2;
-}
-
-section {
-  padding: 2em 3em 2em 3em;
-}
-
-.hero {
-  text-align: center;
-}
-
 .title .subhead {
   text-transform: lowercase;
   font-weight: bold;
@@ -139,6 +121,25 @@ section {
   letter-spacing: 1.1em;
 }
 
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.hero {
+  text-align: center;
+}
+
+section {
+  padding: 2em 3em 2em 3em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 3.5em;
   line-height: 1.1em;
@@ -146,72 +147,51 @@ h1 {
   padding: 0;
 }
 
-h2 {
-  font-size: 2.5em;
-  line-height: 1.1em;
-  margin: 0.2em 0em;
-  padding: 0;
-}
-
-.fries-img {
-  max-width: 55%;
-  min-width: 100px;
-  width: 55%;
-  margin: 0em 0em 10em 0em;
-}
-
-.story {
-  font-size: 1.4em;
-  background: var(--secondary-color);
-  margin: 0;
-  padding: 2em 2em 35% 2em;
-  border-top: 0.6em inset var(--tertiary-color);
+.charholder {
+  text-align: center;
+  max-width: 75%;
+  min-width: 200px;
+  width: 75%;
+  margin: auto;
+  padding: 1em;
+  font-size: 65%;
+  border-radius: 3em;
   color: #F2F2F2;
-  height: auto;
   text-shadow: 0.2em 0.2em var(--shadow-color);
+  border: 0.6em solid var(--secondary-color);
+  background: var(--tertiary-color);
 }
 
-.story .container {
-  text-shadow: none;
-}
-
-.story .container .fuck-you {
-  display: none;
-  opacity: 0%;
+.charholder .charlist {
+  padding: 0em;
+  font-size: 4em;
   margin: 0;
-  padding: 0;
 }
 
-.story .container .soda-image {
-  display: none;
-}
-
-.story .container .harris-image {
-  display: none;
-}
-
-iframe {
-  width: 100%;
-  height: 300px;
-}
-
-.collapsible {
+.charholder .charlist .collapsible {
   display: block;
-  font-size: 1.5em;
+  text-align: center;
+  margin: auto;
+  margin-top: -1em;
+  font-size: 0.65em;
   color: #F2F2F2;
   text-shadow: 0.1em 0.1em var(--shadow-color);
   background: none;
   border: none;
   font-family: 'Rubik';
-  font-weight: bold;
   cursor: pointer;
-  padding-top: 1em;
 }
 
-.content {
-  padding: 0 18px;
+.charholder .charlist .content {
+  padding: 0;
+  padding-top: 0em;
+  background: var(--shadow-color);
+  margin-top: -1em;
+  border-radius: 1em;
   display: none;
   overflow: hidden;
+  font-size: 0.5em;
+  text-shadow: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -271,25 +251,40 @@ iframe {
     background: rgba(255, 114, 59, 0.342);
     text-shadow: 0em 0em;
   }
-  .story {
-    font-size: 2em;
+  .charholder {
+    max-width: 75%;
+    width: 75%;
+    font-size: 1.25em;
   }
-  .collapsible {
+  .charholder .charlist {
+    padding: 0em;
+    font-size: 2.5em;
+    margin: 0;
+  }
+  .charholder .charlist .collapsible {
+    margin-top: -1.3em;
+    margin-bottom: -1em;
+    font-size: 1em;
     -webkit-transition: all 1s;
     transition: all 1s;
   }
-  .collapsible:hover {
+  .charholder .charlist .collapsible:hover {
     letter-spacing: 0.1em;
+  }
+  .charholder .charlist .content {
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+    font-size: 0.5em;
   }
 }
 
 @media only screen and (min-width: 1300px) {
+  section {
+    padding: 10em 4em;
+  }
   .container {
     width: 1300px;
     margin: 0 auto;
-  }
-  section.hero {
-    padding: 10em 4em;
   }
   .hero .container {
     display: -webkit-box;
@@ -300,57 +295,12 @@ iframe {
             justify-content: space-between;
     text-align: left;
   }
-  .hero .container .fries-img {
-    margin: -5em 0em 10em 0em;
-    height: auto;
-    width: auto;
-  }
   .hero .container .title {
-    margin: 6em 3em 0em 5em;
+    margin: 3em 0em 0em 5em;
   }
   .hero .container .title h1 {
     font-size: 4em;
-    width: 90%;
-  }
-  .story .container {
-    padding-bottom: 10em;
-  }
-  .story .container .fuck-you {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  .story .container .fuck-you:hover {
-    opacity: 100%;
-  }
-  .story .container .harris-image {
-    float: left;
-    display: inline;
-    margin: 12% 10% 10% 0;
-    background-color: var(--tertiary-color);
-    background-image: url("../images/harris.png");
-    width: 15em;
-    height: 15em;
-    border-radius: 1em;
-    -webkit-transition: ease-in-out 300ms;
-    transition: ease-in-out 300ms;
-  }
-  .story .container .harris-image:hover {
-    background-image: url("../images/harrisevil.png");
-  }
-  .story .container .soda-image {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    float: right;
-    margin: 15% -10% 0 0;
-    width: auto;
-    height: 25em;
-  }
-  .story .container .soda {
-    max-width: 65%;
+    width: 100%;
   }
 }
-/*# sourceMappingURL=story.css.map */
+/*# sourceMappingURL=characters.css.map */
