@@ -25,7 +25,8 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=j2MnNBE9j-w", //Is that a flying fish?
     "https://www.youtube.com/watch?v=juylZNwioB8", //I LOVE YOU YAKUZA
     "https://www.youtube.com/watch?v=chpmONLYjzQ", //He just kept on yoing
-    "https://www.youtube.com/watch?v=p5L9-k0uV2A" //Pet Russian
+    "https://www.youtube.com/watch?v=p5L9-k0uV2A", //Pet Russian
+    "https://www.youtube.com/watch?v=zrHwZrfp3MY" // VTOL VR has a beautiful and complex control scheme
 ];
 
 var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
