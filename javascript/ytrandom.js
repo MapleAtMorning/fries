@@ -30,7 +30,10 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=gm9lE97sIJo", //301MPH DeSinc
     "https://www.youtube.com/watch?v=ym_mNU6DWK8", //Art in reload animations
     "https://www.youtube.com/watch?v=VqeMjHmL9eg", //Titanfall 2 Intro Cinematic
-    "https://www.youtube.com/watch?v=dy5xLVx2NGY" //What To Do If Your Parachute Fails
+    "https://www.youtube.com/watch?v=dy5xLVx2NGY", //What To Do If Your Parachute Fails
+    "https://www.youtube.com/watch?v=_YYEcBZOZ7Q", //holy shit is he stuck in camera?
+    "https://www.youtube.com/watch?v=HmZm8vNHBSU", // Anti piracy lol
+    "https://www.youtube.com/watch?v=LZgeIReY04c" //Never illegally download
 ];
 
 var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
