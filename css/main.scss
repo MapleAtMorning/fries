@@ -253,8 +253,16 @@ ul.features-list {
 }
 
 
-.contacts-section{
+.white-castle{
     border-top: 1em inset var(--tertiary-color);
+    .booster{
+        color: #F2F2F2;
+        font-size: 3em;
+        transition: all 1s;
+        &:hover{
+            color: white;
+        }
+    }
     .container{
         text-align: center;
         color: white;

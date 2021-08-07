@@ -272,11 +272,22 @@ ul.features-list li:before {
   margin-top: -4.5em;
 }
 
-.contacts-section {
+.white-castle {
   border-top: 1em inset var(--tertiary-color);
 }
 
-.contacts-section .container {
+.white-castle .booster {
+  color: #F2F2F2;
+  font-size: 3em;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.white-castle .booster:hover {
+  color: white;
+}
+
+.white-castle .container {
   text-align: center;
   color: white;
   border: 1em var(--secondary-color);
