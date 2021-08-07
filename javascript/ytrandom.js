@@ -33,7 +33,9 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=dy5xLVx2NGY", //What To Do If Your Parachute Fails
     "https://www.youtube.com/watch?v=_YYEcBZOZ7Q", //holy shit is he stuck in camera?
     "https://www.youtube.com/watch?v=HmZm8vNHBSU", // Anti piracy lol
-    "https://www.youtube.com/watch?v=LZgeIReY04c" //Never illegally download
+    "https://www.youtube.com/watch?v=LZgeIReY04c", //Never illegally download
+    "https://www.youtube.com/watch?v=tGoVKaLXsjk", //another marine joke
+    "https://www.youtube.com/watch?v=Vt3dGuQahU0" //don't worry it's unloaded
 ];
 
 var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
