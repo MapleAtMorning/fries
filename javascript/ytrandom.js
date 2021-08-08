@@ -36,7 +36,8 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=LZgeIReY04c", //Never illegally download
     "https://www.youtube.com/watch?v=tGoVKaLXsjk", //another marine joke
     "https://www.youtube.com/watch?v=Vt3dGuQahU0", //don't worry it's unloaded
-    "https://www.youtube.com/watch?v=a8uyilHatBA" //r u ok elon?   
+    "https://www.youtube.com/watch?v=a8uyilHatBA", //r u ok elon?
+    "https://www.youtube.com/watch?v=7uAaq6qa_D4" //ITSSS YOUR BIRRTHHDAYYY TODAYYYY 
 ];
 
 var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
