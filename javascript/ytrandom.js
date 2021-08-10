@@ -37,7 +37,20 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=tGoVKaLXsjk", //another marine joke
     "https://www.youtube.com/watch?v=Vt3dGuQahU0", //don't worry it's unloaded
     "https://www.youtube.com/watch?v=a8uyilHatBA", //r u ok elon?
-    "https://www.youtube.com/watch?v=7uAaq6qa_D4" //ITSSS YOUR BIRRTHHDAYYY TODAYYYY 
+    "https://www.youtube.com/watch?v=7uAaq6qa_D4", //ITSSS YOUR BIRRTHHDAYYY TODAYYYY
+    "https://www.youtube.com/watch?v=SKt1GtGPv_0", //hApPy BiRtHdAy - In Da Club!!!
+    "https://www.youtube.com/watch?v=9ZEURntrQOg", //Happy together
+    "https://www.youtube.com/watch?v=WbRn0jzBXWM", //Gman clears up a common misconception
+    "https://www.youtube.com/watch?v=ZSrvJ4Wfx2w", //tf2's diverse complexities Funke
+    "https://www.youtube.com/watch?v=uzq7iDhIg_k", //never taunt when killing a spy
+    "https://www.youtube.com/watch?v=bMVN1Gq5a4U", //New vegas speech check
+    "https://www.youtube.com/watch?v=PXqcHi2fkXI", //You've been trolled
+    "https://www.youtube.com/watch?v=7qhi6TW2Jfk", //burgeria.mp4
+    "https://www.youtube.com/watch?v=v3HaQ3Fw25o", //Scott the woz gets punched
+    "https://www.youtube.com/watch?v=UCQk34MD5zc", //Medic gang
+    "https://www.youtube.com/watch?v=6yUKtPIRa5M", //Jerma shuts off his pc
+    "https://www.youtube.com/watch?v=Iu5CqAE9cGU", //You can't do that
+    "https://www.youtube.com/watch?v=6a_9HQW1VmY" //Demonetized Again Funke
 ];
 
 var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
