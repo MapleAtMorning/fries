@@ -271,14 +271,13 @@ h1 {
   }
   .blocks {
     width: 75%;
-    display: flexbox;
-    float: right;
+    display: block;
     margin-top: -10em;
   }
   .blocks .block {
     margin: 1em;
     height: 55%;
-    float: right;
+    margin-left: 25%;
   }
 }
 /*# sourceMappingURL=socials.css.map */

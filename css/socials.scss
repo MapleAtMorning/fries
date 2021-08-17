@@ -231,13 +231,13 @@ h1{
 
     .blocks {
         width: 75%;
-        display: flexbox;
-        float: right;
+        display: block;
+        // float: right;
         margin-top: -10em;
         .block{
             margin: 1em;
             height: 55%;
-            float: right;
+            margin-left: 25%;
         }
     }
 }
