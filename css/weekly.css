@@ -150,7 +150,7 @@ section {
 
 .hero .monthly-img {
   display: inline-block;
-  max-width: 100%;
+  max-width: 75%;
   border-radius: 1em;
   width: auto;
 }
@@ -220,6 +220,7 @@ iframe {
   }
   .hero .container .monthly-img {
     border-radius: 3.5em;
+    max-width: 55%;
   }
   .story {
     font-size: 2em;
@@ -246,6 +247,7 @@ iframe {
   .hero .container .monthly-img {
     margin: -8em 0em 0em 0em;
     border-radius: 1em;
+    max-width: 35%;
   }
   .hero .container .title {
     margin: 0em 3em 0em 5em;
