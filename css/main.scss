@@ -8,10 +8,11 @@
     --grey: rgb(99, 99, 99);
     --secondary-color: #be1931;
     --tertiary-color: #dd2e44;
+    --background-color: #F2F2F2;
 }
 
 body {
-    background: #F2F2F2;
+    background: var(--background-color);
     margin: 0;
     font-family: 'Rubik' ;
     cursor: default;
@@ -256,11 +257,12 @@ ul.features-list {
 .white-castle{
     border-top: 1em inset var(--tertiary-color);
     .booster{
-        color: #F2F2F2;
+        color: black;
+        opacity: 0;
         font-size: 3em;
-        transition: all 1s;
+        transition: ease-in-out 1s;
         &:hover{
-            color: white;
+            opacity: 0.05;
         }
     }
     .container{

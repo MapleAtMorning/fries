@@ -5,10 +5,11 @@
   --grey: rgb(99, 99, 99);
   --secondary-color: #be1931;
   --tertiary-color: #dd2e44;
+  --background-color: #F2F2F2;
 }
 
 body {
-  background: #F2F2F2;
+  background: var(--background-color);
   margin: 0;
   font-family: 'Rubik';
   cursor: default;
@@ -277,14 +278,15 @@ ul.features-list li:before {
 }
 
 .white-castle .booster {
-  color: #F2F2F2;
+  color: black;
+  opacity: 0;
   font-size: 3em;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 
 .white-castle .booster:hover {
-  color: white;
+  opacity: 0.05;
 }
 
 .white-castle .container {
