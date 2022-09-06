@@ -107,9 +107,9 @@ ul {
     
 }
 
-section {
-    padding: 2em 3em 2em 3em;   
-}
+// section {
+//     padding: 2em 3em 2em 3em;   
+// }
 
 .hero {
     text-align: center;
@@ -188,6 +188,7 @@ section {
 }
 
 section.features-section {
+    padding: 2em 3em 2em 3em;   
     background: var(--tertiary-color);
     color: white;
     border-top: 1.5em inset var(--tertiary-color);
@@ -229,6 +230,7 @@ ul.features-list {
 }
 
 .testimonials-section {
+    padding: 2em 3em 2em 3em;   
     background: var(--tertiary-color);
     text-decoration: none;
     color: white;
