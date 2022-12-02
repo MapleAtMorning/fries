@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 :root {
-  --primary-color: rgb(255, 72, 0);
+  --primary-orange: rgb(255, 72, 0);
+  --primary-red: #be1931;
+  --lighter-red: #dd2e44;
   --grey: rgb(99, 99, 99);
-  --secondary-color: #be1931;
-  --tertiary-color: #dd2e44;
   --background-color: #F2F2F2;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .navbar .logo span {
-  color: var(--primary-color);
+  color: var(--primary-orange);
 }
 
 .navbar .logo:hover {
@@ -64,8 +64,8 @@ nav {
   width: auto;
   right: 0;
   top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--secondary-color)), to(var(--primary-color)));
-  background: linear-gradient(var(--secondary-color), var(--primary-color));
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary-red)), to(var(--primary-orange)));
+  background: linear-gradient(var(--primary-red), var(--primary-orange));
   height: 100vh;
   padding: 1em;
   font-size: 1em;
@@ -148,7 +148,7 @@ section {
 }
 
 .title .primary-cta {
-  background: var(--primary-color);
+  background: var(--primary-orange);
   color: white;
   text-decoration: none;
   padding: 0.7em 1em;
@@ -207,9 +207,9 @@ section {
 }
 
 section.features-section {
-  background: var(--tertiary-color);
+  background: var(--lighter-red);
   color: white;
-  border-top: 1.5em inset var(--tertiary-color);
+  border-top: 1.5em inset var(--lighter-red);
 }
 
 ul.features-list {
@@ -228,7 +228,7 @@ ul.features-list li {
   margin: 0em 0em 1em 25%;
   position: relative;
   display: list-item;
-  background: var(--secondary-color);
+  background: var(--primary-red);
   background-size: unset;
   color: white;
   text-decoration: none;
@@ -250,13 +250,13 @@ ul.features-list li:before {
 }
 
 .testimonials-section {
-  background: var(--tertiary-color);
+  background: var(--lighter-red);
   text-decoration: none;
   color: white;
 }
 
 .testimonials-section ul li {
-  background: var(--secondary-color);
+  background: var(--primary-red);
   text-decoration: none;
   text-align: center;
   padding: 2em 1em;
@@ -268,13 +268,13 @@ ul.features-list li:before {
 .testimonials-section ul li img {
   width: 5em;
   height: 5em;
-  border: 15px solid var(--secondary-color);
+  border: 15px solid var(--primary-red);
   border-radius: 50%;
   margin-top: -4.5em;
 }
 
 .white-castle {
-  border-top: 1em inset var(--tertiary-color);
+  border-top: 1em inset var(--lighter-red);
 }
 
 .white-castle .booster {
@@ -292,11 +292,11 @@ ul.features-list li:before {
 .white-castle .container {
   text-align: center;
   color: white;
-  border: 1em var(--secondary-color);
+  border: 1em var(--primary-red);
   border-style: solid;
   border-radius: 0.5em;
   margin-top: 0;
-  background-color: var(--tertiary-color);
+  background-color: var(--lighter-red);
   padding: 1em;
 }
 
@@ -361,7 +361,7 @@ iframe {
     font-weight: bold;
     color: #2c2c2c;
     text-decoration: underline;
-    text-shadow: 0.1em 0.1em var(--tertiary-color);
+    text-shadow: 0.1em 0.1em var(--lighter-red);
   }
   .navbar nav ul.navPrimary {
     margin: 0;
@@ -370,8 +370,8 @@ iframe {
     font-weight: bold;
   }
   .navbar nav li.invite a {
-    color: var(--primary-color);
-    border: 5px solid var(--primary-color);
+    color: var(--primary-orange);
+    border: 5px solid var(--primary-orange);
     font-weight: bold;
     border-radius: 3em;
   }
@@ -431,10 +431,10 @@ iframe {
   .contacts-section .container {
     text-align: center;
     color: white;
-    border: 1em var(--secondary-color);
+    border: 1em var(--primary-red);
     border-style: solid;
     margin-top: -5em;
-    background-color: var(--tertiary-color);
+    background-color: var(--lighter-red);
     padding: 1em;
   }
   .hero .container {
