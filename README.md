@@ -6,9 +6,9 @@ If it's truly awful, don't look at it that's your fault for criticising a comple
 Ignore my stupid commit names I've changed how I do it like 5 times
 
 # [Credits](http://sus.fries.pics)
-- **FlameBand - Creator**
-- Maya - Emotional Support Catgirl
-- Zeexel - Actual god
+- **Maple - Creator**
+- Rowan - Emotional Support Catgirl
+- Mewtek - Actual god
 - DrGonzoPhD - They call him, Mr. Fries.
 - HarryG/Biden - Jumpstarting the server and being Biden
 - Soda - Soda
