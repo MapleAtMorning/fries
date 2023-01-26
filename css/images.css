@@ -13,3 +13,11 @@ img{
 #imgs-hero{
     margin-left: 50vw;
 }
+
+@media only screen and (max-width:767px){ /* MD Bootstrap Breakpoint */
+    #main-text-col{
+        position: inherit;
+        width: 100%;
+        transform: translate(0, 0);
+    }
+}
