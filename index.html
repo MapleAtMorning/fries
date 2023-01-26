@@ -26,10 +26,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg fixed-top default-theming" id="nav-top">
+    <header class="navbar navbar-expand-md fixed-top default-theming" id="nav-top">
         <div class="container-fluid">
             
             <div class="navbar-brand">
@@ -41,10 +42,10 @@
             
             <div class="offcanvas offcanvas-end" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
                 <div class="offcanvas-header">
-                    <h3 id="offcanvaslabel" class="mt-3">Games Unite</h3>
+                    <h3 id="offcanvaslabel" class="mt-3"><a class="logo" href="/">Fries.<span>Pics</span></a></h3>
                     <button type="button" class="btn-close btn-close-white offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <ul class="navbar-nav offcanvas-body justify-content-lg-end" id="nav-item-holder">
+                <ul class="navbar-nav offcanvas-body justify-content-md-end" id="nav-item-holder">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" aria-current="page" href="images">Images</a></li>
                     <li class="nav-item"><a class="nav-link" aria-current="page" href="monthly">Monthly</a></li>
@@ -55,10 +56,45 @@
     </header>
 
     <main>
-        <div id="main-hero row">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-        </div>
+        <section id="main-hero" class="row row-cols-1 row-cols-md-2">
+            <div class="col" id="main-text-col">
+                <div class="container">
+                    
+                    <p id="expand-subtitle">it's fries</p>
+                    <h1>Fries, the Discord server.</h1>
+                    <div>
+                        <button id="join-now">Join Now</button>
+                        <a href="#"><img src="imgs/watch.svg" alt="Black and white icon of a recording camera">&nbsp;Don't click me</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" id="main-img-col">
+                <img src="imgs/fries.svg" alt="Fries Emoji">
+            </div>
+        </section>
+
+        <section class="row row-cols-1 row-cols-md-2" id="features">
+            <div class="col">
+                <div class="row">
+                    <p>Many images of fries</p>
+                </div>
+                <div class="row">
+                    <p>Unlimited Fun</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>Invite your friends</p>
+                </div>
+                <div class="row">
+                    <p>Immense pleasure</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="reviews">
+        </section>
     </main>
    
 </body>

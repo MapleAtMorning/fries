@@ -1,0 +1,15 @@
+img{
+    max-width: 5em;
+    height: auto;
+    padding-bottom: 1em;
+}
+
+#main-text-col{
+    position: fixed;
+    width: 50vw;
+    transform: translate(-5.5em, 13em);
+}
+
+#imgs-hero{
+    margin-left: 50vw;
+}
