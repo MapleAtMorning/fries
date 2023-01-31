@@ -2,8 +2,11 @@
 =====================================================
 */
 
+*{outline: 3px solid #00ff2a52}
+
 #red-container{
     background-color: brown;
+    padding: 5em;
 }
 
 #features{
@@ -20,15 +23,28 @@
     background-color: red;
 }
 
+#reviews .col{
+    text-align: center;
+    padding: 0;
+}
+
 #reviews img{
     aspect-ratio: 1 / 1;
     width: 100px;
     object-fit: cover;
     border-radius: 100%;
+    border: 0.5em solid red;
+    background-color: red;
+    transform: translateY(50%);
 }
 
-#reviews div{
-    text-align: center;
+#reviews .col div{
+    background-color: red;
+    width: 50%;
+    margin: auto;
+    padding-top: 4.5em;
+    min-height: 15em;
+    border-radius: 1em;
 }
 
 /* Media Queries
