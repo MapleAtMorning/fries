@@ -88,4 +88,8 @@ main{
   main{
     margin-top: 60px;
   }
+  #main-text-col{
+    text-align: center;
+  }
+
 } 

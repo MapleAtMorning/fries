@@ -2,11 +2,14 @@
 =====================================================
 */
 
+#red-container{
+    background-color: brown;
+}
+
 #features{
     width: 100%;
-    margin: auto;
+    margin: auto auto 3em auto;
     text-align: center;
-    background-color: brown;
     padding: 1em 0;
 }
 
@@ -17,8 +20,19 @@
     background-color: red;
 }
 
-/* Media Queries
+#reviews img{
+    aspect-ratio: 1 / 1;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
 
+#reviews div{
+    text-align: center;
+}
+
+/* Media Queries
+=====================================================
 */
 
 @media only screen and (max-width:767px){ /* MD Bootstrap Breakpoint */
