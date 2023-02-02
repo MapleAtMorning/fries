@@ -68,6 +68,13 @@ main{
 
 #expand-subtitle{
   letter-spacing: 0.3em;
+  width: auto;
+  display: inline;
+  transition: letter-spacing cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+}
+
+#expand-subtitle:hover{
+  letter-spacing: 0.5em;
 }
 
 #main-text-col{
