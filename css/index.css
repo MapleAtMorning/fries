@@ -1,8 +1,31 @@
-/* Features
+*{outline: 3px solid #00ff2a52}
+
+/* Fries Hero
 =====================================================
 */
 
-*{outline: 3px solid #00ff2a52}
+#main-hero button{
+    background-color: var(--lighter-red);
+    color: #ffffff;
+    border: none;
+    border-radius: 10em;
+    padding: 0.2em 1em;
+    transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#main-hero button:hover{
+    background-color: var(--primary-red);
+}
+
+#main-hero a{
+    color: var(--grey);
+    text-decoration: none;
+}
+
+/* Red Container Zone
+=====================================================
+*/
+
 
 #red-container{
     background-color: var(--primary-red);
