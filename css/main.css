@@ -20,7 +20,7 @@ body {
 */
 
 .navbar {
-  background: white;
+  background: #fff;
   padding: 0.5em;
   height: 48px;
 }
@@ -55,10 +55,6 @@ body {
 =====================================================
 */
 
-main{
-  margin-top: 50px;
-}
-
 #main-hero{
   padding: 0 20% 15%;
   justify-content: center;
@@ -78,6 +74,11 @@ main{
 }
 
 #main-text-col{
+  display: grid;
+  align-items: center;
+}
+
+#main-img-col{
   display: grid;
   align-items: center;
 }

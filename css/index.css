@@ -4,6 +4,13 @@
 =====================================================
 */
 
+#main-hero{
+    padding: 0 15%;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+  }
+
 #main-hero button{
     background-color: var(--lighter-red);
     color: #ffffff;
@@ -74,10 +81,9 @@
     border-radius: 1em;
 }
 
-#reviews blockquote{
-    min-height: 4em;
-}
-
+#reviews blockquote{min-height: 7rem;}
+#reviews blockquote::before{content: open-quote;}
+#reviews blockquote::after{content: close-quote;}
 /* Media Queries
 =====================================================
 */
