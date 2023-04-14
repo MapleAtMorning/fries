@@ -121,7 +121,7 @@ main{
   justify-content: center;
   display: grid;
   grid-template-columns: 1.25fr 1fr;
-  min-height: calc(100vh - 48px);
+  height: calc(100vh - 48px);
   margin: auto;
 }
 
@@ -200,6 +200,43 @@ h1{
   }
 } 
 
+/* Images
+=====================================================
+*/
+
+#images-page{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+#images-page .container{
+  width: 30%;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  display: grid;
+}
+
+#images-page::-webkit-scrollbar {
+  display: none;
+}
+
+#images-page .col{
+  width: 100%;
+  display: grid;
+  gap: 1em;
+}
+
+#images-page img{
+  width: 100%;
+}
+
 /* Red Container Zone
 =====================================================
 */
@@ -269,3 +306,9 @@ h1{
     grid-template-columns: 1fr;
   }
 }
+
+/* Modular Classes
+=====================================================
+*/
+
+.hidden{display: none; position: absolute;}
