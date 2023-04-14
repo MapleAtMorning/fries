@@ -68,6 +68,7 @@ header {
 
 .nav-link{
   font-size: 1.1rem;
+  cursor: pointer;
   color: black;
   text-decoration: none;
   list-style-type: none;
@@ -112,16 +113,13 @@ header {
 =====================================================
 */
 
-main{
-  padding-top: 48px;
-}
 
 #main-hero{
   padding: 0 10% 0;
   justify-content: center;
   display: grid;
   grid-template-columns: 1.25fr 1fr;
-  height: calc(100vh - 48px);
+  height: calc(100vh);
   margin: auto;
 }
 
@@ -173,9 +171,10 @@ h1{
   text-align: left;
   justify-content: right;
   align-items: center;
+  z-index: 10;
 }
 
-#main-img-col{
+#fries-page{
   display: grid;
   align-items: center;
 }
@@ -214,6 +213,9 @@ h1{
   overflow-y: scroll;
   -ms-overflow-style: none; 
   scrollbar-width: none;
+  -webkit-mask-image: -webkit-linear-gradient(#ffffff00, #000000ff 10% 90%, #ffffff00);
+  mask-image: linear-gradient(#ffffff00, #000000ff 10% 90%, #ffffff00);
+  mask-repeat: no-repeat;
 }
 
 #images-page .container{
@@ -221,6 +223,8 @@ h1{
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   display: grid;
+  position: absolute;
+  right: 10%;
 }
 
 #images-page::-webkit-scrollbar {
@@ -229,6 +233,7 @@ h1{
 
 #images-page .col{
   width: 100%;
+  padding: 5em 0;
   display: grid;
   gap: 1em;
 }
@@ -311,4 +316,4 @@ h1{
 =====================================================
 */
 
-.hidden{display: none; position: absolute;}
+.hidden{display: none; overflow: hidden; opacity: 0;}

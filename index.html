@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <title>Fries | The Site For All Kinds of Fries</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,20 +18,19 @@
     <meta name="description"
         content="it's fries, get your fries. we love fries. not a cult, just fries enjoyers. totally not sketchy at all. love fries.">
     <meta name="keywords" content="fries, fries.pics, pics, french fries">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="imgs/icons/fries.svg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header id="nav-top">
         <a class="logo" href="http://invite.fries.pics">Fries.<span>Pics</span></a>
         <ul id="nav-link-holder">
-            <li><a class="nav-link active" aria-current="page" href="/">Home</a></li>
-            <li><a class="nav-link" aria-current="page" href="images">Images</a></li>
-            <li><a class="nav-link" aria-current="page" href="monthly">Monthly</a></li>
+            <li><a class="nav-link" onclick="changeTab(0)">Home</a></li>
+            <li><a class="nav-link" onclick="changeTab(1)">Images</a></li>
+            <li><a class="nav-link" href="monthly">Monthly</a></li>
         </ul>
     </header>
 
@@ -44,14 +42,14 @@
                     <h1>Fries,<br> <span id="changingText">The Discord server</span>.</h1>
                     <div>
                         <button id="join-now">Join Now</button>
-                        <a href="#"><img src="imgs/watch.svg"
+                        <a href="#"><img src="imgs/icons/watch.svg"
                                 alt="Black and white icon of a recording camera">&nbsp;Don't click me</a>
                     </div>
                 </div>
             </div>
 
-            <div id="main-img-col" class="hidden">
-                <img src="imgs/fries.svg" alt="Fries Emoji">
+            <div id="fries-page" class="hidden">
+                <img src="imgs/icons/fries.svg" alt="Fries Emoji">
             </div>
             
             <div id="images-page">
@@ -115,13 +113,14 @@
             <section id="white-castle">
                 <h2>White Castle</h2>
                 <h3>This is literally just some random white castle</h3>
-                <iframe title="Google Maps White Castle"
+                <!-- <iframe title="Google Maps White Castle"
                     src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sus!4v1623057963918!5m2!1sen!2sus!6m8!1m7!1sH5RV_8CPLijfnLrkxYB8EA!2m2!1d39.8560524436738!2d-86.39296802910516!3f305.65996857782767!4f2.7048118440184368!5f0.7820865974627469"
                     width="600" height="450" style="border-radius:0.5em; border:0;" allowfullscreen=""
-                    loading="lazy"></iframe>
+                    loading="lazy"></iframe> -->
             </section>
         </div>
     </main>
+    <script src="javascript/navchange.js"></script>
 </body>
 
 </html>
