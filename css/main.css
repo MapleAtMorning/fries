@@ -62,7 +62,7 @@ header {
   border-bottom: none;
   width: fit-content;
   margin: 0 1em 0 0;
-  transition: height 1s ease;
+  transition: height 0.45s ease;
 }
 
 #nav-link-holder.open{
@@ -106,8 +106,8 @@ header {
   }
 
   #nav-link-holder{
-    text-align: center;
     display: block;
+    text-align: center;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -143,6 +143,7 @@ header {
   grid-template-columns: 1.25fr 1fr;
   height: 100vh;
   margin: auto;
+  overflow-x: hidden;
 }
 
 h1{
@@ -153,9 +154,8 @@ h1{
 #expand-subtitle{
   letter-spacing: 0.5rem;
   color: var(--grey);
-  width: auto;
-  display: inline;
-  transition: letter-spacing cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  width: min-content;
+  transition: letter-spacing cubic-bezier(0.165, 0.84, 0.44, 1) 1s, opacity 0.3s ease;;
 }
 
 #expand-subtitle:hover{
@@ -164,7 +164,6 @@ h1{
 
 #buttons{
   padding: 1em 0;
-  display: block;
 }
 
 #join-now{
@@ -201,6 +200,12 @@ h1{
   align-items: center;
 }
 
+#title-container{
+  width: 550px;
+  white-space: nowrap;
+  transition: width 1s ease;
+}
+
 #fries-page{
   display: grid;
   align-items: center;
@@ -224,12 +229,15 @@ h1{
     font-size: clamp(0.75em, 2.5vw, 1em);
   }
 
+  #expand-subtitle{
+    width: auto;
+  }
+
   #features{
     grid-template-columns: 1fr;
   }
 
   #fries-page{
-    display: block;
     width: 100vw;
     margin: auto;
   }
@@ -245,7 +253,6 @@ h1{
   width: 100%;
   left: 0;
   top: 50%;
-  display: block;
   transform: translateY(-50%);
   height: 80vh;
   overflow-y: scroll;
@@ -394,6 +401,12 @@ h1{
 */
 
 .hidden{
+  overflow-y: hidden; 
+  opacity: 0;
+  z-index: -50;
+}
+
+.hard-hidden{
   display: none; 
   overflow-y: hidden; 
   opacity: 0;
