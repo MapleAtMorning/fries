@@ -1,4 +1,29 @@
 const tabs = [document.getElementById("fries-page"), document.getElementById("images-page")]
+const nav = document.getElementById('nav-link-holder')
+const menu = document.getElementById('list-button')
+let openBool = false
+
+function navOpen () {
+  console.log('Open')
+  nav.classList.add('open')
+  openBool = true
+};
+
+function navClose () {
+  console.log('Close')
+  nav.classList.remove('open')
+  openBool = false
+};
+
+function navStart () {
+  if (openBool === true) {
+    navClose()
+  } else {
+    navOpen()
+  };
+  // Else instead of elseif to make it so if anything goes wrong, it will default to trying to open the menu.
+};
+
 
 function changeTab(goto){
     // console.log(tabs[goto])
@@ -33,3 +58,5 @@ function changeTab(goto){
 }
 
 // changeTab()
+
+menu.addEventListener("click", navStart)
