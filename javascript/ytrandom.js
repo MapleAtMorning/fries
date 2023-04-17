@@ -24,7 +24,7 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=NgFHgVLC-Y0", //Step and go Heavy
     "https://www.youtube.com/watch?v=chpmONLYjzQ", //He just kept on yoing
     "https://www.youtube.com/watch?v=p5L9-k0uV2A", //Pet Russian
-    "https://www.youtube.com/watch?v=zrHwZrfp3MY", // VTOL VR has a beautiful and complex control scheme
+    "https://www.youtube.com/watch?v=zrHwZrfp3MY", //VTOL VR has a beautiful and complex control scheme
     "https://www.youtube.com/watch?v=1nCqRmx3Dnw", //Fresh Prince
     "https://www.youtube.com/watch?v=ngORPZj4wwY", //I'm going to die
     "https://www.youtube.com/watch?v=gm9lE97sIJo", //301MPH DeSinc
@@ -50,8 +50,37 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=UCQk34MD5zc", //Medic gang
     "https://www.youtube.com/watch?v=6yUKtPIRa5M", //Jerma shuts off his pc
     "https://www.youtube.com/watch?v=Iu5CqAE9cGU", //You can't do that
-    "https://www.youtube.com/watch?v=6a_9HQW1VmY" //Demonetized Again Funke
-];
+    "https://www.youtube.com/watch?v=6a_9HQW1VmY", //Demonetized Again Funke
+    "https://www.youtube.com/watch?v=4KFiOp2o4L8", //Signalis Trailer
+    "https://www.youtube.com/watch?v=KCag36gu2Co", //Hey you hungry home invader!
+    "https://www.youtube.com/watch?v=rVZ3SeKM-1E", //Shiey & The Art of Trespassing
+    "https://www.youtube.com/watch?v=84q-1jwI5sE", //Two cats singing "Cat - C418"
+    "https://www.youtube.com/watch?v=Oqb2h642A0Y", //C418 - Dry Hands created using Minecraft 1.5
+    "https://www.youtube.com/watch?v=ESOyXKytHr4", //buddy holly bitcrushed nightcore
+    "https://www.youtube.com/watch?v=asjQNZn7vng", //Rendering at 5am
+    "https://www.youtube.com/watch?v=C2SsaP9IYxA", //shiey - make it back
+    "https://www.youtube.com/watch?v=w6JOgDfHlyE", //ILLEGAL FREEDOM: Train Surfing Journey Across Europe
+    "https://www.youtube.com/watch?v=5fX6dSKg0HQ", //Contrabass clarinet jam
+    "https://www.youtube.com/watch?v=asgtIKR3CeA", //Are you guys going trick or treating?
+    "https://www.youtube.com/watch?v=tDacjrSCeq4", //Shouting in the Datacenter
+    "https://www.youtube.com/watch?v=GUVQHD6j9S0", //Jesus Christ Skate 3 Edit
+    "https://www.youtube.com/watch?v=moFB-j5iY2E", //A cat aims for the carp iniside of ice
+    "https://www.youtube.com/watch?v=9vloTLa_5t0", //get out shift
+    "https://www.youtube.com/watch?v=AQjU3UD7Ahk", //bad apple but its on a hijacked russian military frequency
+    "https://www.youtube.com/watch?v=rPPn6jHhc_8", //AVGN harnesses Billy Mitchell's power
+    "https://www.youtube.com/watch?v=rzLIUgnKY40", //future gen. consels wii2 ps4 xbox720?
+    "https://www.youtube.com/watch?v=h3eEnWBkHGQ", //I Think You Dropped This Back in Black Mesa
+    "https://www.youtube.com/watch?v=ILvd5buCEnU", //MARGARET THATCHER IS DEAD
+    "https://www.youtube.com/watch?v=yJd2bHwVnLE", //MY HEAD DOES NOT LOOK LIKE A SODDING TIC TAC
+    "https://www.youtube.com/watch?v=ybZ9PVcf6X8", //Deep Philosophical Video
+    "https://www.youtube.com/watch?v=lFLyfRKsMaU", //Killer fish from San Diego
+    "https://www.youtube.com/watch?v=4sZuN0xXWLc" //Big Bill Hell's
+]
 
-var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)];
-document.getElementById('trolled').href = randomItem
+function genSet(){
+    var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)]
+    document.getElementById('random-link').href = randomItem
+}
+
+document.getElementById('random-link').addEventListener("click", genSet)
+genSet()
