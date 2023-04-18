@@ -20,7 +20,6 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=861-pxjkokk", //Completely normal revolver
     "https://www.youtube.com/watch?v=PFkju1-0lZI", //GMOD KINECT
     "https://www.youtube.com/watch?v=HV1O9TaK_qg", //Gorilla tag Trailer
-    "https://www.youtube.com/watch?v=j2MnNBE9j-w", //Is that a flying fish?
     "https://www.youtube.com/watch?v=NgFHgVLC-Y0", //Step and go Heavy
     "https://www.youtube.com/watch?v=chpmONLYjzQ", //He just kept on yoing
     "https://www.youtube.com/watch?v=p5L9-k0uV2A", //Pet Russian
@@ -52,6 +51,7 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=Iu5CqAE9cGU", //You can't do that
     "https://www.youtube.com/watch?v=6a_9HQW1VmY", //Demonetized Again Funke
     "https://www.youtube.com/watch?v=4KFiOp2o4L8", //Signalis Trailer
+    "https://www.youtube.com/watch?v=xfi7ivjXD3Y", //Signalis PS Trailer
     "https://www.youtube.com/watch?v=KCag36gu2Co", //Hey you hungry home invader!
     "https://www.youtube.com/watch?v=rVZ3SeKM-1E", //Shiey & The Art of Trespassing
     "https://www.youtube.com/watch?v=84q-1jwI5sE", //Two cats singing "Cat - C418"
@@ -74,7 +74,9 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=yJd2bHwVnLE", //MY HEAD DOES NOT LOOK LIKE A SODDING TIC TAC
     "https://www.youtube.com/watch?v=ybZ9PVcf6X8", //Deep Philosophical Video
     "https://www.youtube.com/watch?v=lFLyfRKsMaU", //Killer fish from San Diego
-    "https://www.youtube.com/watch?v=4sZuN0xXWLc" //Big Bill Hell's
+    "https://www.youtube.com/watch?v=4sZuN0xXWLc", //Big Bill Hell's
+    "https://www.youtube.com/watch?v=01Runa3neb0", //One in a krillion
+    "https://www.youtube.com/watch?v=A_BlNA7bBxo" //Michael Reeves Surgery Robot
 ]
 
 function genSet(){
