@@ -18,6 +18,10 @@ body {
   font-family: 'Rubik';
 }
 
+* {
+  transition: background-color 1s ease, color 1.5s ease;
+}
+
 /* *{outline: 3px solid #15ff0065;} */
 
 /* Navbar
@@ -85,16 +89,19 @@ header {
   line-height: 48px;
 }
 
-.nav-link:is(svg){
+#list-button{
+  display: none;
+  cursor: pointer;
+}
+
+#theme-button{
+  color: var(--primary-text);
+  cursor: pointer;
+  float: right;
   position: relative;
   top: 50%;
   padding: 0.25rem 0.25rem;
   transform: translateY(-50%);
-}
-
-#list-button{
-  display: none;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 780px) {
@@ -104,9 +111,14 @@ header {
     text-align: center;
   }
 
+  /* header .logo{
+    margin: auto;
+  } */
+
   #list-button{
     display: inline;
     height: 30px;
+    color: var(--primary-text);
     padding: 0;
     position: absolute;
     top: 50%;
@@ -137,6 +149,23 @@ header {
     line-height: 2.5rem;
     color: white;
     font-weight: 700;
+  }
+
+  #theme-button{
+    display: inline;
+    position: absolute;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    float: left;
+    left: 2rem;
+  }
+
+  #theme-button svg{
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -192,10 +221,20 @@ h1{
   background-color: var(--primary-red);
 }
 
-#join-now + a{
-  color: var(--grey);
+#random-link{
+  color: var(--primary-text);
+  position: relative;
+  top: -0.1em;
   text-decoration: none;
-  transform: translateY(-3px);
+  margin-left: 1em;
+}
+
+#random-link:hover{
+  text-decoration: underline;
+}
+
+#random-link svg{
+  transform: translateY(9px);
 }
 
 #main-hero a img{
@@ -236,7 +275,7 @@ h1{
   #main-text-col{
     text-align: center;
     justify-content: center;
-    font-size: clamp(0.75em, 2.5vw, 1em);
+    font-size: clamp(0.5em, 2.5vw, 1em);
   }
 
   #expand-subtitle{
