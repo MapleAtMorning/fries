@@ -6,8 +6,13 @@ const root = document.querySelector(':root')
 
 
 if(theme === null || theme == "undefined"){
-    storage.setItem("theme", "light")
-    theme = "light"
+    if(window.matchMedia("(prefers-color-scheme: dark)")){
+        storage.setItem("theme", "dark")
+        theme = "dark"
+    }else{
+        storage.setItem("theme", "light")
+        theme = "light"
+    }
 }
 
 function startTheme(){
