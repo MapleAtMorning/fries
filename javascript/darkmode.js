@@ -31,6 +31,8 @@ function setTheme(newTheme){
         root.style.setProperty('--grey', "#999999")
         root.style.setProperty('--background-color', "#F2F2F2")
         root.style.setProperty('--background-color-2', "#ffffff")
+        root.style.setProperty('--primary-red', "#be1931")
+        root.style.setProperty('--lighter-red', "221, 46, 68")
 
         sun.style.display = "none"
         moon.style.display = "block"
@@ -40,6 +42,8 @@ function setTheme(newTheme){
         root.style.setProperty('--grey', "#d2d2d2")
         root.style.setProperty('--background-color', "#151515")
         root.style.setProperty('--background-color-2', "#000000")
+        root.style.setProperty('--primary-red', "#6a0413")
+        root.style.setProperty('--lighter-red', "144, 17, 36")
 
         sun.style.display = "block"
         moon.style.display = "none"

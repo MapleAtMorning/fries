@@ -360,6 +360,7 @@ h1{
 #red-container{
   background-color: var(--primary-red);
   padding: 5em;
+  color: var(--primary-text);
 }
 
 #features{
@@ -397,6 +398,7 @@ h1{
   border: 0.5em solid rgb(var(--lighter-red));
   background-color: rgb(156, 30, 47);
   transform: translateY(50%);
+  transition: border 1s ease;
 }
 
 #reviews .card div{
