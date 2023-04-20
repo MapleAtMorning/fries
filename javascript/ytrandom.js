@@ -71,6 +71,7 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=rzLIUgnKY40", //future gen. consels wii2 ps4 xbox720?
     "https://www.youtube.com/watch?v=h3eEnWBkHGQ", //I Think You Dropped This Back in Black Mesa
     "https://www.youtube.com/watch?v=ILvd5buCEnU", //MARGARET THATCHER IS DEAD
+    "https://www.youtube.com/watch?v=6LvlG2dTQKg", //OBJECTS THAT I HAVE SHOVED UP MY ARSE
     "https://www.youtube.com/watch?v=yJd2bHwVnLE", //MY HEAD DOES NOT LOOK LIKE A SODDING TIC TAC
     "https://www.youtube.com/watch?v=ybZ9PVcf6X8", //Deep Philosophical Video
     "https://www.youtube.com/watch?v=lFLyfRKsMaU", //Killer fish from San Diego
