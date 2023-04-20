@@ -203,6 +203,7 @@ h1{
 
 #buttons{
   padding: 1em 0;
+  overflow-x: hidden;
 }
 
 #join-now{
