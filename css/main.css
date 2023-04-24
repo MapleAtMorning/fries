@@ -394,6 +394,8 @@ h1{
   border: 0.5em solid rgb(var(--lighter-red));
   background-color: rgb(156, 30, 47);
   transform: translateY(50%);
+  z-index: 5;
+  position: relative;
 }
 
 #reviews .card div{
@@ -402,13 +404,22 @@ h1{
   min-width: 140px;
   margin: auto;
   padding-top: 4.5em;
-  min-height: 5em;
+  min-height: 8em;
   border-radius: 1em;
+  position: relative;
+  z-index: 0;
 }
 
-#reviews blockquote{min-height: 6rem;}
+/* #reviews blockquote{min-height: 6rem;} */
 #reviews blockquote::before{content: open-quote;}
 #reviews blockquote::after{content: close-quote;}
+
+#reviews cite{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: 5px;
+  opacity: 0.8;
+}
 
 @media only screen and (max-width:780px){
   #expand-subtitle{
