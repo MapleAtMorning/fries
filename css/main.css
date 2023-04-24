@@ -18,10 +18,6 @@ body {
   font-family: 'Rubik';
 }
 
-* {
-  transition: background-color 1s ease, color 1.5s ease;
-}
-
 /* *{outline: 3px solid #15ff0065;} */
 
 /* Navbar
@@ -194,7 +190,7 @@ h1{
   letter-spacing: 0.5rem;
   color: var(--grey);
   width: min-content;
-  transition: letter-spacing cubic-bezier(0.165, 0.84, 0.44, 1) 1s, opacity 0.3s ease;;
+  transition: letter-spacing cubic-bezier(0.165, 0.84, 0.44, 1) 1s, opacity 0.3s ease;
 }
 
 #expand-subtitle:hover{
@@ -398,7 +394,6 @@ h1{
   border: 0.5em solid rgb(var(--lighter-red));
   background-color: rgb(156, 30, 47);
   transform: translateY(50%);
-  transition: border 1s ease;
 }
 
 #reviews .card div{
@@ -469,3 +464,7 @@ h1{
 .changing{
   transition: opacity 0.3s ease;
 }
+
+/* * {
+  transition: background-color 1s ease, color 1.5s linear;
+} */
