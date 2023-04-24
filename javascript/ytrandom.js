@@ -78,7 +78,8 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=4sZuN0xXWLc", //Big Bill Hell's
     "https://www.youtube.com/watch?v=01Runa3neb0", //One in a krillion
     "https://www.youtube.com/watch?v=A_BlNA7bBxo", //Michael Reeves Surgery Robot
-    "https://www.youtube.com/watch?v=nUC3tOfInP0" //Good Kid - WE'RE ON FORTNITE RADIO
+    "https://www.youtube.com/watch?v=nUC3tOfInP0", //Good Kid - WE'RE ON FORTNITE RADIO
+    "https://www.youtube.com/watch?v=dQw4w9WgXcQ" //Rick Astley - Never Gonna Give You Up
 ]
 
 function genSet(){
