@@ -57,6 +57,7 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=84q-1jwI5sE", //Two cats singing "Cat - C418"
     "https://www.youtube.com/watch?v=Oqb2h642A0Y", //C418 - Dry Hands created using Minecraft 1.5
     "https://www.youtube.com/watch?v=ESOyXKytHr4", //buddy holly bitcrushed nightcore
+    "https://www.youtube.com/watch?v=kLiALP-zuWE", //hash pipe butcrushed nightcore
     "https://www.youtube.com/watch?v=asjQNZn7vng", //Rendering at 5am
     "https://www.youtube.com/watch?v=C2SsaP9IYxA", //shiey - make it back
     "https://www.youtube.com/watch?v=w6JOgDfHlyE", //ILLEGAL FREEDOM: Train Surfing Journey Across Europe
@@ -73,14 +74,19 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=ILvd5buCEnU", //MARGARET THATCHER IS DEAD
     "https://www.youtube.com/watch?v=6LvlG2dTQKg", //OBJECTS THAT I HAVE SHOVED UP MY ARSE
     "https://www.youtube.com/watch?v=yJd2bHwVnLE", //MY HEAD DOES NOT LOOK LIKE A SODDING TIC TAC
-    "https://www.youtube.com/watch?v=ybZ9PVcf6X8", //Deep Philosophical Video
+    "https://www.youtube.com/watch?v=ybZ9PVcf6X8", //Deep Philosophical Video-
     "https://www.youtube.com/watch?v=lFLyfRKsMaU", //Killer fish from San Diego
     "https://www.youtube.com/watch?v=4sZuN0xXWLc", //Big Bill Hell's
     "https://www.youtube.com/watch?v=01Runa3neb0", //One in a krillion
     "https://www.youtube.com/watch?v=A_BlNA7bBxo", //Michael Reeves Surgery Robot
     "https://www.youtube.com/watch?v=nUC3tOfInP0", //Good Kid - WE'RE ON FORTNITE RADIO
     "https://www.youtube.com/watch?v=dQw4w9WgXcQ", //Rick Astley - Never Gonna Give You Up
-    "https://www.youtube.com/watch?v=rvsR9FH3ITk" //French Fries
+    "https://www.youtube.com/watch?v=rvsR9FH3ITk", //French Fries
+    "https://www.youtube.com/watch?v=yyJ48-BYb7s", //The Beatles Rock Band
+    "https://www.youtube.com/watch?v=WchseC9aKTU", //Two Trucks
+    "https://www.youtube.com/watch?v=7S3Ao96E314", //Tony Christmas
+    "https://www.youtube.com/watch?v=TPNwnX2PNJI", //Can a White Guy make a KPOP Group?
+    "https://www.youtube.com/watch?v=3O_NeGgE1ew" //X8
 ]
 
 function genSet(){
