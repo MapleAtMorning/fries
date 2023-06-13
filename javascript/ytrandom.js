@@ -87,8 +87,8 @@ var youtubeLinks = [
     "https://www.youtube.com/watch?v=7S3Ao96E314", //Tony Christmas
     "https://www.youtube.com/watch?v=TPNwnX2PNJI", //Can a White Guy make a KPOP Group?
     "https://www.youtube.com/watch?v=3O_NeGgE1ew", //X8
-    "https://www.youtube.com/watch?v=A2LJlN4cgSg" //Ninja Shockwave
-]
+    "https://www.youtube.com/watch?v=A2LJlN4cgSg", //Ninja Shockwave
+    "https://www.youtube.com/watch?v=wKw08ZjbHBA" //Dance when you hear your state
 
 function genSet(){
     var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)]
