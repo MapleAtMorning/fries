@@ -1,100 +1,16 @@
-var youtubeLinks = [
-    "https://www.youtube.com/watch?v=aYsgsSo1aow", //Ghost Astley Tokyo
-    "https://www.youtube.com/watch?v=7t5CfmS0UuY", //How to put your mouse on the table
-    "https://www.youtube.com/watch?v=EPNr4aztjX8", //How to left click
-    "https://www.youtube.com/watch?v=SNvDUO42Hys", //phoon too much for zblock
-    "https://www.youtube.com/watch?v=czTksCF6X8Y", //Pizza Time
-    "https://www.youtube.com/watch?v=gRMNwrNk5WE", //Joe many liberals
-    "https://www.youtube.com/watch?v=gkTb9GP9lVI", //Troll song
-    "https://www.youtube.com/watch?v=D-GU4jvSvz4", //Triage at Dawn
-    "https://www.youtube.com/watch?v=geNMz0J9TEQ", //Meet the Scout
-    "https://www.youtube.com/watch?v=zNZ1rq5kW4M", //A Tribute to Minecraft
-    "https://www.youtube.com/watch?v=iijdWiQppq0", //Forest Maze
-    "https://www.youtube.com/watch?v=WqsQ2zIsTYk", //Monke Need to Swing
-    "https://www.youtube.com/watch?v=VqB1uoDTdKM", //Door Stuck
-    "https://www.youtube.com/watch?v=wJWksPWDKOc", //EATEOT
-    "https://www.youtube.com/watch?v=vIKbbBIK9_s", //new phone
-    "https://www.youtube.com/watch?v=hT116E2W2JQ", //DeSinc Webcam
-    "https://www.youtube.com/watch?v=sIj3TFlI9o8", //ANOMALY AUSCHWITZ
-    "https://www.youtube.com/watch?v=wcR36N3SM7Q", //Off to visit your mother
-    "https://www.youtube.com/watch?v=861-pxjkokk", //Completely normal revolver
-    "https://www.youtube.com/watch?v=PFkju1-0lZI", //GMOD KINECT
-    "https://www.youtube.com/watch?v=HV1O9TaK_qg", //Gorilla tag Trailer
-    "https://www.youtube.com/watch?v=NgFHgVLC-Y0", //Step and go Heavy
-    "https://www.youtube.com/watch?v=chpmONLYjzQ", //He just kept on yoing
-    "https://www.youtube.com/watch?v=p5L9-k0uV2A", //Pet Russian
-    "https://www.youtube.com/watch?v=zrHwZrfp3MY", //VTOL VR has a beautiful and complex control scheme
-    "https://www.youtube.com/watch?v=1nCqRmx3Dnw", //Fresh Prince
-    "https://www.youtube.com/watch?v=ngORPZj4wwY", //I'm going to die
-    "https://www.youtube.com/watch?v=gm9lE97sIJo", //301MPH DeSinc
-    "https://www.youtube.com/watch?v=ym_mNU6DWK8", //Art in reload animations
-    "https://www.youtube.com/watch?v=VqeMjHmL9eg", //Titanfall 2 Intro Cinematic
-    "https://www.youtube.com/watch?v=dy5xLVx2NGY", //What To Do If Your Parachute Fails
-    "https://www.youtube.com/watch?v=_YYEcBZOZ7Q", //holy shit is he stuck in camera?
-    "https://www.youtube.com/watch?v=HmZm8vNHBSU", //Anti piracy lol
-    "https://www.youtube.com/watch?v=LZgeIReY04c", //Never illegally download
-    "https://www.youtube.com/watch?v=tGoVKaLXsjk", //another marine joke
-    "https://www.youtube.com/watch?v=Vt3dGuQahU0", //don't worry it's unloaded
-    "https://www.youtube.com/watch?v=a8uyilHatBA", //r u ok elon?
-    "https://www.youtube.com/watch?v=7uAaq6qa_D4", //ITSSS YOUR BIRRTHHDAYYY TODAYYYY
-    "https://www.youtube.com/watch?v=SKt1GtGPv_0", //hApPy BiRtHdAy - In Da Club!!!
-    "https://www.youtube.com/watch?v=9ZEURntrQOg", //Happy together
-    "https://www.youtube.com/watch?v=WbRn0jzBXWM", //Gman clears up a common misconception
-    "https://www.youtube.com/watch?v=ZSrvJ4Wfx2w", //tf2's diverse complexities Funke
-    "https://www.youtube.com/watch?v=uzq7iDhIg_k", //never taunt when killing a spy
-    "https://www.youtube.com/watch?v=bMVN1Gq5a4U", //New vegas speech check
-    "https://www.youtube.com/watch?v=PXqcHi2fkXI", //You've been trolled
-    "https://www.youtube.com/watch?v=7qhi6TW2Jfk", //burgeria.mp4
-    "https://www.youtube.com/watch?v=v3HaQ3Fw25o", //Scott the woz gets punched
-    "https://www.youtube.com/watch?v=UCQk34MD5zc", //Medic gang
-    "https://www.youtube.com/watch?v=6yUKtPIRa5M", //Jerma shuts off his pc
-    "https://www.youtube.com/watch?v=Iu5CqAE9cGU", //You can't do that
-    "https://www.youtube.com/watch?v=6a_9HQW1VmY", //Demonetized Again Funke
-    "https://www.youtube.com/watch?v=4KFiOp2o4L8", //Signalis Trailer
-    "https://www.youtube.com/watch?v=xfi7ivjXD3Y", //Signalis PS Trailer
-    "https://www.youtube.com/watch?v=KCag36gu2Co", //Hey you hungry home invader!
-    "https://www.youtube.com/watch?v=rVZ3SeKM-1E", //Shiey & The Art of Trespassing
-    "https://www.youtube.com/watch?v=84q-1jwI5sE", //Two cats singing "Cat - C418"
-    "https://www.youtube.com/watch?v=Oqb2h642A0Y", //C418 - Dry Hands created using Minecraft 1.5
-    "https://www.youtube.com/watch?v=ESOyXKytHr4", //buddy holly bitcrushed nightcore
-    "https://www.youtube.com/watch?v=kLiALP-zuWE", //hash pipe butcrushed nightcore
-    "https://www.youtube.com/watch?v=asjQNZn7vng", //Rendering at 5am
-    "https://www.youtube.com/watch?v=C2SsaP9IYxA", //shiey - make it back
-    "https://www.youtube.com/watch?v=w6JOgDfHlyE", //ILLEGAL FREEDOM: Train Surfing Journey Across Europe
-    "https://www.youtube.com/watch?v=5fX6dSKg0HQ", //Contrabass clarinet jam
-    "https://www.youtube.com/watch?v=asgtIKR3CeA", //Are you guys going trick or treating?
-    "https://www.youtube.com/watch?v=tDacjrSCeq4", //Shouting in the Datacenter
-    "https://www.youtube.com/watch?v=GUVQHD6j9S0", //Jesus Christ Skate 3 Edit
-    "https://www.youtube.com/watch?v=moFB-j5iY2E", //A cat aims for the carp iniside of ice
-    "https://www.youtube.com/watch?v=9vloTLa_5t0", //get out shift
-    "https://www.youtube.com/watch?v=AQjU3UD7Ahk", //bad apple but its on a hijacked russian military frequency
-    "https://www.youtube.com/watch?v=rPPn6jHhc_8", //AVGN harnesses Billy Mitchell's power
-    "https://www.youtube.com/watch?v=rzLIUgnKY40", //future gen. consels wii2 ps4 xbox720?
-    "https://www.youtube.com/watch?v=h3eEnWBkHGQ", //I Think You Dropped This Back in Black Mesa
-    "https://www.youtube.com/watch?v=ILvd5buCEnU", //MARGARET THATCHER IS DEAD
-    "https://www.youtube.com/watch?v=6LvlG2dTQKg", //OBJECTS THAT I HAVE SHOVED UP MY ARSE
-    "https://www.youtube.com/watch?v=yJd2bHwVnLE", //MY HEAD DOES NOT LOOK LIKE A SODDING TIC TAC
-    "https://www.youtube.com/watch?v=ybZ9PVcf6X8", //Deep Philosophical Video-
-    "https://www.youtube.com/watch?v=lFLyfRKsMaU", //Killer fish from San Diego
-    "https://www.youtube.com/watch?v=4sZuN0xXWLc", //Big Bill Hell's
-    "https://www.youtube.com/watch?v=01Runa3neb0", //One in a krillion
-    "https://www.youtube.com/watch?v=A_BlNA7bBxo", //Michael Reeves Surgery Robot
-    "https://www.youtube.com/watch?v=nUC3tOfInP0", //Good Kid - WE'RE ON FORTNITE RADIO
-    "https://www.youtube.com/watch?v=dQw4w9WgXcQ", //Rick Astley - Never Gonna Give You Up
-    "https://www.youtube.com/watch?v=rvsR9FH3ITk", //French Fries
-    "https://www.youtube.com/watch?v=yyJ48-BYb7s", //The Beatles Rock Band
-    "https://www.youtube.com/watch?v=WchseC9aKTU", //Two Trucks
-    "https://www.youtube.com/watch?v=7S3Ao96E314", //Tony Christmas
-    "https://www.youtube.com/watch?v=TPNwnX2PNJI", //Can a White Guy make a KPOP Group?
-    "https://www.youtube.com/watch?v=3O_NeGgE1ew", //X8
-    "https://www.youtube.com/watch?v=A2LJlN4cgSg", //Ninja Shockwave
-    "https://www.youtube.com/watch?v=wKw08ZjbHBA" //Dance when you hear your state
-]
+let rawJSON
+async function jsonGrab(){
+    const result = await fetch("https://mapleatmorning.github.io/ytrandomjson/ytrandom.json")
+    rawJSON = await result.json()
+    return rawJSON
+}
+await jsonGrab()
 
-function genSet(){
-    var randomItem = youtubeLinks[Math.floor(Math.random()*youtubeLinks.length)]
+let keys = Object.keys(rawJSON)
+
+function grabRandom(){
+    let randomItem = keys[Math.floor(Math.random()*keys.length)]
     document.getElementById('random-link').href = randomItem
 }
-
-document.getElementById('random-link').addEventListener("click", genSet)
-genSet()
+document.getElementById('random-link').addEventListener("click", grabRandom)
+grabRandom()
