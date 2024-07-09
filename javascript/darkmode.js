@@ -6,8 +6,8 @@ const root = document.querySelector(':root')
 
 
 if(theme === null || theme == "undefined"){
-    storage.setItem("theme", "light")
-    theme = "light"
+    storage.setItem("theme", "dark")
+    theme = "dark"
 }
 
 function startTheme(){
@@ -18,30 +18,50 @@ function startTheme(){
     }
 }
 
+function themeColorUpdater(primaryOrange, primaryRed, primaryLight, grey, background, secondaryBackground, text, sunMoon) {
+    root.style.setProperty('--primary-orange', primaryOrange)
+    root.style.setProperty('--primary-red', primaryRed)
+    root.style.setProperty('--lighter-red', primaryLight)
+    root.style.setProperty('--grey', grey)
+    root.style.setProperty('--background-color', background)
+    root.style.setProperty('--background-color-2', secondaryBackground)
+    root.style.setProperty('--primary-text', text)
+
+    if (sunMoon === "sun"){
+        sun.style.display = "block"
+        moon.style.display = "none"
+    }else{
+        sun.style.display = "none"
+        moon.style.display = "block"
+    }
+}
+
 function setTheme(newTheme){
     console.log(newTheme)
     storage.setItem("theme", newTheme)
     if (newTheme === "light"){
-        root.style.setProperty('--primary-text', "#000000")
-        root.style.setProperty('--grey', "#999999")
-        root.style.setProperty('--background-color', "#F2F2F2")
-        root.style.setProperty('--background-color-2', "#ffffff")
-        root.style.setProperty('--primary-red', "#be1931")
-        root.style.setProperty('--lighter-red', "221, 46, 68")
-
-        sun.style.display = "none"
-        moon.style.display = "block"
+        themeColorUpdater(
+            "#ff4800",
+            "#be1931",
+            "221, 46, 68",
+            "#636363",
+            "#F2F2F2",
+            "#ffffff",
+            "#000000",
+            "moon"
+        )
     } 
     if (newTheme === "dark"){
-        root.style.setProperty('--primary-text', "#F2F2F2")
-        root.style.setProperty('--grey', "#d2d2d2")
-        root.style.setProperty('--background-color', "#151515")
-        root.style.setProperty('--background-color-2', "#000000")
-        root.style.setProperty('--primary-red', "#6a0413")
-        root.style.setProperty('--lighter-red', "144, 17, 36")
-
-        sun.style.display = "block"
-        moon.style.display = "none"
+        themeColorUpdater(
+            "#ff4800",
+            "#be1931",
+            "221, 46, 68",
+            "#636363",
+            "#2a2d2e",
+            "#1d2122",
+            "#FFF",
+            "sun"
+        )
     } 
 }
 

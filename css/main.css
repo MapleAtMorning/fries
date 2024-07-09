@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
 :root {
-  --primary-orange: rgb(255, 72, 0);
+  --primary-orange: #ff4800;
   --primary-red: #be1931;
-  --lighter-red: 221, 46, 68;
-  --grey: rgb(99, 99, 99);
+  --lighter-red: "221, 46, 68";
+  --grey: #636363;
   --background-color: #F2F2F2;
   --background-color-2: #ffffff;
   --primary-text: #000000;
@@ -352,11 +352,44 @@ h1{
 =====================================================
 */
 
+#main-page{
+  overflow: hidden;
+}
 
 #red-container{
   background-color: var(--primary-red);
   padding: 5em;
   color: var(--primary-text);
+  position: relative;
+  margin: 90px 0;
+}
+
+#red-container::before{
+  content: '';
+  display: block;
+  background-color: var(--primary-red);
+  /* background-color: gray; */
+  z-index: -1;
+  height: 120px;
+  width: 110vw;
+  position: absolute;
+  left: -5vw;
+  top: -50px;
+  rotate: -2.5deg;
+}
+
+#red-container::after{
+  content: '';
+  display: block;
+  background-color: var(--primary-red);
+  /* background-color: gray; */
+  z-index: -1;
+  height: 120px;
+  width: 110vw;
+  position: absolute;
+  left: -5vw;
+  bottom: -50px;
+  rotate: -2.5deg;
 }
 
 #features{

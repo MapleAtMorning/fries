@@ -20,6 +20,12 @@
     <meta name="keywords" content="fries, fries.pics, pics, french fries">
     <link rel="shortcut icon" type="image/png" href="imgs/icons/fries.svg">
 
+    <!-- React Script -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel Script -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -37,6 +43,7 @@
             <li><a class="nav-link" onclick="changeTab(1)">Images</a></li>
         </ul>
     </header>
+    <script src="javascript/darkmode.js"></script>
 
     <main>
         <section id="main-hero">
@@ -78,7 +85,7 @@
             </div>
         </section>
 
-        <div id="main-page">
+        <section id="main-page">
 
             <div id="red-container">
                 <section id="features">
@@ -116,12 +123,12 @@
             <section id="white-castle">
                 <h2>Fries.Pics HQ</h2>
                 <h3>This is a totally normal house.</h3>
-                <iframe title="8800 Blue Lick" width="600" height="450" style="border-radius:0.5em; border:0;" src="https://mapleatmorning.github.io/8800-blue-lick/my.matterport.com/show/index.html" frameborder="0"></iframe>
+                <!-- <iframe title="8800 Blue Lick" width="600" height="450" style="border-radius:0.5em; border:0;" src="https://mapleatmorning.github.io/8800-blue-lick/my.matterport.com/show/index.html" frameborder="0"></iframe> -->
             </section>
-        </div>
+        </section>
     </main>
-    <script src="javascript/darkmode.js"></script>
     <script src="javascript/navchange.js"></script>
+    <!-- <script src="javascript/navchange.jsx"></script> -->
     <script type="module" src="javascript/ytrandom.js"></script>
 </body>
 
