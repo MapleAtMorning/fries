@@ -1,24 +1,22 @@
 let storage = window.localStorage
 let theme = storage.getItem("theme")
-const sun = document.getElementById("sun")
-const moon = document.getElementById("moon")
 const root = document.querySelector(':root')
 
 
 if(theme === null || theme == "undefined"){
-    storage.setItem("theme", "dark")
-    theme = "dark"
+    storage.setItem("theme", "light")
+    theme = "light"
 }
 
 function startTheme(){
-    if (getComputedStyle(sun).display === "block"){
+    if (theme == "light"){
         setTheme("light")
     }else{
         setTheme("dark")
     }
 }
 
-function themeColorUpdater(primaryOrange, primaryRed, primaryLight, grey, background, secondaryBackground, text, sunMoon) {
+function themeColorUpdater(primaryOrange, primaryRed, primaryLight, grey, background, secondaryBackground, text) {
     root.style.setProperty('--primary-orange', primaryOrange)
     root.style.setProperty('--primary-red', primaryRed)
     root.style.setProperty('--lighter-red', primaryLight)
@@ -26,14 +24,6 @@ function themeColorUpdater(primaryOrange, primaryRed, primaryLight, grey, backgr
     root.style.setProperty('--background-color', background)
     root.style.setProperty('--background-color-2', secondaryBackground)
     root.style.setProperty('--primary-text', text)
-
-    if (sunMoon === "sun"){
-        sun.style.display = "block"
-        moon.style.display = "none"
-    }else{
-        sun.style.display = "none"
-        moon.style.display = "block"
-    }
 }
 
 function setTheme(newTheme){
@@ -47,8 +37,7 @@ function setTheme(newTheme){
             "#636363",
             "#F2F2F2",
             "#ffffff",
-            "#000000",
-            "moon"
+            "#000000"
         )
     } 
     if (newTheme === "dark"){
@@ -59,13 +48,9 @@ function setTheme(newTheme){
             "#636363",
             "#2a2d2e",
             "#1d2122",
-            "#FFF",
-            "sun"
+            "#FFF"
         )
     } 
 }
-
-sun.addEventListener("click", startTheme)
-moon.addEventListener("click", startTheme)
 
 setTheme(theme)

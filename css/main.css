@@ -92,15 +92,12 @@ header {
 
 #theme-button{
   color: var(--primary-text);
-  cursor: pointer;
-  float: right;
-  position: relative;
   top: 50%;
-  padding: 0.25rem 0.25rem;
-  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1000px) {
   header{
     width: 100vw;
     padding: 0;
@@ -219,7 +216,7 @@ h1{
 }
 
 #random-link{
-  color: var(--primary-text);
+  color: transparent;
   position: relative;
   top: -0.1em;
   text-decoration: none;
@@ -227,7 +224,7 @@ h1{
 }
 
 #random-link:hover{
-  text-decoration: underline;
+    color: var(--primary-text)
 }
 
 #random-link svg{
@@ -258,7 +255,7 @@ h1{
   max-width: 75%;
 }
 
-@media only screen and (max-width:780px){
+@media only screen and (max-width: 1000px){
   main{
     padding-top: 60px;
   }
@@ -277,10 +274,6 @@ h1{
 
   #expand-subtitle{
     width: auto;
-  }
-
-  #features{
-    grid-template-columns: 1fr;
   }
 
   #fries-page{
@@ -368,7 +361,6 @@ h1{
   content: '';
   display: block;
   background-color: var(--primary-red);
-  /* background-color: gray; */
   z-index: -1;
   height: 120px;
   width: 110vw;
@@ -382,7 +374,6 @@ h1{
   content: '';
   display: block;
   background-color: var(--primary-red);
-  /* background-color: gray; */
   z-index: -1;
   height: 120px;
   width: 110vw;
@@ -392,25 +383,11 @@ h1{
   rotate: -2.5deg;
 }
 
-#features{
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-#features p{
-  margin: 0.2em auto;
-  padding: 1em;
-  border-radius: 1rem;
-  width: 10em;
-  background-color: rgb(var(--lighter-red));
-}
-
 #reviews{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: auto;
 }
 
 #reviews .card{
@@ -418,6 +395,10 @@ h1{
   padding: 0;
   width: 100%;
 }
+
+#reviews .card:first-of-type{margin-top: -50px;}
+#reviews .card:nth-of-type(2){margin-top: -75px;}
+#reviews .card:last-of-type{margin-top: -100px;}
 
 #reviews img{
   aspect-ratio: 1 / 1;
@@ -433,12 +414,12 @@ h1{
 
 #reviews .card div{
   background-color: rgb(var(--lighter-red));
-  width: 50%;
+  width: 75%;
   min-width: 140px;
   margin: auto;
   padding-top: 4.5em;
   min-height: 8em;
-  border-radius: 1em;
+  border-radius: 1em 1em 5em 5em;
   position: relative;
   z-index: 0;
 }
@@ -454,13 +435,9 @@ h1{
   opacity: 0.8;
 }
 
-@media only screen and (max-width:780px){
+@media only screen and (max-width:1000px){
   #expand-subtitle{
     padding-top: 0;
-  }
-
-  #features{
-    grid-template-columns: 1fr;
   }
   
   #reviews{
@@ -472,6 +449,13 @@ h1{
     justify-content: center;
   }
 
+  #reviews .card{margin-top: 0 !important;}
+}
+
+@media only screen and (max-width:1120px){
+  #reviews{
+    width: 100%;
+  }
 }
 
 /* White Castle
@@ -509,6 +493,6 @@ h1{
   transition: opacity 0.3s ease;
 }
 
-/* * {
+* {
   transition: background-color 1s ease, color 1.5s linear;
-} */
+}
